@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "工作/0业务相关/团队规范/新项目开发流程.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "新项目开发流程"
             }
           }
         ]
@@ -73,8 +73,7 @@
               "title": "书签"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -94,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "工作/0业务相关/团队规范/新项目开发流程.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +103,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "README 的反向链接列表"
+              "title": "新项目开发流程 的反向链接列表"
             }
           },
           {
@@ -162,6 +161,53 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "ea2a55fbe2c6a1ac",
-  "lastOpenFiles": []
+  "active": "89d58224b5279b73",
+  "lastOpenFiles": [
+    "工作/求职&发展/nzpC559.tmp",
+    "工作/求职&发展/试用期.zip",
+    "工作/0业务相关/团队规范/物联网云上线规范.xlsx",
+    "工作/0业务相关/团队规范/质量提升.md",
+    "工作/0业务相关/团队规范/新项目开发流程.md",
+    "工作/0业务相关/团队规范/前端业务流程闭环.xmind",
+    "工作/技术文章/temp/vue3 hooks思考.md",
+    "工作/0业务相关/whty",
+    "工作/0业务相关/团队规范",
+    "工作/0业务相关",
+    "Obsidian使用技巧.md",
+    "工作/技术文章/temp/svg预览组件.md",
+    "工作/技术文章/temp/sonarQube简单介绍.md",
+    "工作/技术文章/temp/Electron 的运行原理是什么.md",
+    "工作/技术文章/temp/前端业务流程闭环.xmind",
+    "工作/技术文章/temp/代码抽审和走查.md",
+    "工作/技术文章/temp/安装一个依赖失败如何分析？.md",
+    "工作/技术文章/temp/vue2 自动注册全局组件.md",
+    "工作/技术文章/temp/vscode二次开发.md",
+    "工作/技术文章/temp",
+    "工作/技术笔记/新建文件夹",
+    "工作/技术文章/专栏技术/webpack通关秘籍/file/全量配置模板/webpack.config2.js",
+    "工作/技术文章/前端工程化/vue3-cli/images/2023-07-11-15-33-48.png",
+    "工作/技术文章/前端工程化/vue3-cli/images/2023-07-11-15-33-08.png",
+    "工作/技术文章/前端工程化/vue3-cli/images/2023-07-11-10-30-30.png",
+    "工作/技术文章/前端工程化/vue3-cli/images/2023-07-11-10-30-21.png",
+    "工作/技术文章/前端工程化/vue3-cli/images/2023-07-11-10-29-43.png",
+    "工作/技术文章/前端工程化/vue3-cli/images/2023-07-11-10-29-17.png",
+    "工作/技术文章/前端工程化/vue3-cli/images/2023-07-11-10-29-27.png",
+    "工作/技术文章/前端工程化/vue3-cli/images/2023-07-11-10-28-50.png",
+    "工作/技术文章/前端工程化/vue3-cli/images/2023-07-11-10-28-37.png",
+    "工作/技术文章/前端工程化/vue3-cli/images/2023-07-11-10-28-13.png",
+    "工作/技术文章/专栏技术/vue2原理剖析/模版编译渲染原理/渲染函数如何转换成VNode节点？.md",
+    "工作/技术文章/专栏技术/vue2原理剖析/模版编译渲染原理/VNode的Patch过程.md",
+    "工作/技术文章/专栏技术/vue2原理剖析/异步更新策略/异步更新策略和nextTick原理.md",
+    "工作/技术文章/专栏技术/vue2原理剖析/模版编译渲染原理/template如何转换成渲染函数的？.md",
+    "工作/技术文章/专栏技术/vue2原理剖析/Vue事件机制/Vue事件机制.md",
+    "工作/技术文章/专栏技术/vue2原理剖析/响应式原理/响应式原理.md",
+    "工作/技术文章/专栏技术/浏览器工作原理/已归档/19-Promise：使用Promise，告别回调函数.md",
+    "工作/技术文章/专栏技术/浏览器工作原理/已归档/21-Chrome开发者工具：利用网络面板做性能分析.md",
+    "工作/技术文章/专栏技术/浏览器工作原理/已归档/20-async↗await：使用同步的方式去写异步代码.md",
+    "工作/技术文章/专栏技术/浏览器工作原理/已归档/18-宏任务和微任务：不是所有任务都是一个待遇.md",
+    "工作/技术文章/专栏技术/浏览器工作原理/已归档/17-WebAPI：XMLHttpRequest是怎么实现的？.md",
+    "工作/技术文章/专栏技术/浏览器工作原理/已归档/16-WebAPI：setTimeout是如何实现的？.md",
+    "工作/技术文章/专栏技术/浏览器工作原理/已归档/15-消息队列和事件循环：页面是怎么“活”起来的？.md",
+    "工作/技术文章/专栏技术/浏览器工作原理/已归档/14-编译器和解释器：V8是如何执行一段JavaScript代码的？.md"
+  ]
 }

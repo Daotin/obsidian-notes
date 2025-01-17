@@ -1,3 +1,6 @@
 {
-  "cssTheme": "Border"
+  "cssTheme": "Border",
+  "textFontFamily": "霞鹜文楷 GB 屏幕阅读版",
+  "monospaceFontFamily": "JetBrains Mono",
+  "theme": "obsidian"
 }
