@@ -1,6 +1,6 @@
 ```
 vpn
-https://222.180.196.102:4430]
+https://222.180.196.102:4430
 用户名1：tianyu01
 密码：BicmvFUEBWwcrxeZfDME
 

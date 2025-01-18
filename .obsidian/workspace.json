@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "工作/0业务相关/whty/开发项目/重庆通卡/vpn+服务器.md",
+                "file": "工作/0业务相关/团队规范/☢️开发注意清单.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "vpn+服务器"
+              "title": "☢️开发注意清单"
             }
           },
           {
@@ -27,12 +27,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "工作/0业务相关/whty/开发项目/重庆通卡/渝通行APP二期需求.md",
+                "file": "-1-临时/AI+前端.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "渝通行APP二期需求"
+              "title": "AI+前端"
+            }
+          },
+          {
+            "id": "a56ffee6d3ebb327",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "工作/求职&发展/职业发展/向上管理/如何让领导给你安排有技术深度的事情？.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "如何让领导给你安排有技术深度的事情？"
             }
           }
         ],
@@ -67,7 +81,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "直面焦虑烦恼",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -92,7 +106,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 390.5
   },
   "right": {
     "id": "c3393ec6a15ea009",
@@ -108,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "工作/0业务相关/whty/开发项目/重庆通卡/渝通行APP二期需求.md",
+                "file": "-1-临时/AI+前端.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +132,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "渝通行APP二期需求 的反向链接列表"
+              "title": "AI+前端 的反向链接列表"
             }
           },
           {
@@ -127,12 +141,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "-1-临时/AI+前端.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "README 的出链列表"
+              "title": "AI+前端 的出链列表"
             }
           },
           {
@@ -154,17 +168,28 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "-1-临时/AI+前端.md"
               },
               "icon": "lucide-list",
-              "title": "README 的大纲"
+              "title": "AI+前端 的大纲"
+            }
+          },
+          {
+            "id": "034a4ecb25f0c525",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 343
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -177,52 +202,53 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "47b0a935d36f362e",
+  "active": "89d58224b5279b73",
   "lastOpenFiles": [
-    "工作/0业务相关/whty/开发项目/重庆通卡/vpn+服务器.md",
-    "工作/0业务相关/whty/开发项目/重庆通卡/渝通行APP二期需求.md",
+    "工作/技术文章/npm.md",
+    "-1-临时/AI+前端.md",
+    "-1-临时",
+    "工作/技术文章/images/Pasted image 20250118105109.png",
+    "工作/技术文章/Git常见问题.md",
+    "工作/求职&发展/职业发展/职场认知/直面焦虑烦恼，谈怎么成长.md",
+    "工作/技术文章/代码抽审和走查.md",
+    "工作/技术文章/安装一个依赖失败如何分析？.md",
+    "工作/技术文章/vue3 hooks思考.md",
+    "工作/技术文章/vue2 自动注册全局组件.md",
+    "工作/技术文章/vscode二次开发.md",
+    "工作/技术文章/svg预览组件.md",
+    "工作/技术文章/sonarQube简单介绍.md",
+    "工作/技术文章/ESLint+Prettier.md",
+    "工作/技术文章/Electron 的运行原理是什么.md",
+    "工作/技术文章/images/Untitled.png",
+    "工作/技术文章/images/Untitled 3.png",
+    "工作/技术文章/images/Untitled 2.png",
+    "工作/技术文章/images/Untitled 1.png",
+    "工作/技术文章/images",
+    "工作/技术文章/temp/ESLint+Prettier.md",
+    "工作/技术文章/temp/images/Untitled.png",
+    "工作/技术文章/temp/images/Untitled 3.png",
+    "工作/技术文章/temp/images/Untitled 2.png",
+    "工作/技术文章/temp/images/Untitled 1.png",
+    "工作/技术文章/temp/images",
+    "工作/技术文章/temp/新建文件夹",
+    "工作/求职&发展/试用期/如何在新公司快速落地.md",
+    "工作/求职&发展/职业发展/职场认知/10-思维转变.md",
+    "工作/求职&发展/职业发展/职场认知/好奇200万的前端到底是干啥的.md",
+    "工作/求职&发展/职业发展/职场认知/2023前端职业路怎么走？.md",
+    "工作/求职&发展/职业发展/职场认知/如何形成结构化思维？.md",
+    "工作/求职&发展/职业发展/职场认知/前端工程师的实用学习技巧.md",
+    "工作/求职&发展/职业发展/职场认知/前端工程师不同层级的能力差异.md",
+    "工作/求职&发展/职业发展/职场认知/images/Untitled 11.png",
+    "工作/求职&发展/职业发展/职场认知/images",
+    "工作/求职&发展/职业发展/工作年终总结怎么写？.md",
+    "工作/求职&发展/职业发展/2023第三季度优秀员工（分享稿）.md",
+    "工作/求职&发展/职业发展/做好项目管理.md",
+    "工作/0业务相关/whty/其他",
+    "工作/求职&发展/职业发展/向上管理/对上管理-犬校.md",
+    "工作/求职&发展/职业发展/向上管理/如何让领导给你安排有技术深度的事情？.md",
+    "工作/0业务相关/团队规范/images",
     "工作/0业务相关/whty/开发项目/重庆通卡",
-    "Obsidian使用技巧.md",
-    "工作/0业务相关/whty/🔒whty账号.md",
     "工作/0业务相关/whty/开发项目",
-    "工作/0业务相关/团队规范/新项目开发流程.md",
-    "工作/求职&发展/nzpC559.tmp",
-    "工作/求职&发展/试用期.zip",
-    "工作/0业务相关/团队规范/物联网云上线规范.xlsx",
-    "工作/0业务相关/团队规范/质量提升.md",
-    "工作/0业务相关/团队规范/前端业务流程闭环.xmind",
-    "工作/技术文章/temp/vue3 hooks思考.md",
-    "工作/0业务相关/whty",
-    "工作/0业务相关/团队规范",
-    "工作/0业务相关",
-    "工作/技术文章/temp/svg预览组件.md",
-    "工作/技术文章/temp/sonarQube简单介绍.md",
-    "工作/技术文章/temp/Electron 的运行原理是什么.md",
-    "工作/技术文章/temp/前端业务流程闭环.xmind",
-    "工作/技术文章/temp/代码抽审和走查.md",
-    "工作/技术文章/temp/安装一个依赖失败如何分析？.md",
-    "工作/技术文章/temp/vue2 自动注册全局组件.md",
-    "工作/技术文章/temp/vscode二次开发.md",
-    "工作/技术文章/前端工程化/vue3-cli/images/2023-07-11-15-33-48.png",
-    "工作/技术文章/前端工程化/vue3-cli/images/2023-07-11-15-33-08.png",
-    "工作/技术文章/前端工程化/vue3-cli/images/2023-07-11-10-30-30.png",
-    "工作/技术文章/前端工程化/vue3-cli/images/2023-07-11-10-30-21.png",
-    "工作/技术文章/前端工程化/vue3-cli/images/2023-07-11-10-29-43.png",
-    "工作/技术文章/前端工程化/vue3-cli/images/2023-07-11-10-29-17.png",
-    "工作/技术文章/前端工程化/vue3-cli/images/2023-07-11-10-29-27.png",
-    "工作/技术文章/前端工程化/vue3-cli/images/2023-07-11-10-28-50.png",
-    "工作/技术文章/前端工程化/vue3-cli/images/2023-07-11-10-28-37.png",
-    "工作/技术文章/前端工程化/vue3-cli/images/2023-07-11-10-28-13.png",
-    "工作/技术文章/专栏技术/vue2原理剖析/模版编译渲染原理/渲染函数如何转换成VNode节点？.md",
-    "工作/技术文章/专栏技术/vue2原理剖析/模版编译渲染原理/VNode的Patch过程.md",
-    "工作/技术文章/专栏技术/vue2原理剖析/异步更新策略/异步更新策略和nextTick原理.md",
-    "工作/技术文章/专栏技术/vue2原理剖析/模版编译渲染原理/template如何转换成渲染函数的？.md",
-    "工作/技术文章/专栏技术/vue2原理剖析/Vue事件机制/Vue事件机制.md",
-    "工作/技术文章/专栏技术/vue2原理剖析/响应式原理/响应式原理.md",
-    "工作/技术文章/专栏技术/浏览器工作原理/已归档/19-Promise：使用Promise，告别回调函数.md",
-    "工作/技术文章/专栏技术/浏览器工作原理/已归档/21-Chrome开发者工具：利用网络面板做性能分析.md",
-    "工作/技术文章/专栏技术/浏览器工作原理/已归档/20-async↗await：使用同步的方式去写异步代码.md",
-    "工作/技术文章/专栏技术/浏览器工作原理/已归档/18-宏任务和微任务：不是所有任务都是一个待遇.md",
-    "工作/技术文章/专栏技术/浏览器工作原理/已归档/17-WebAPI：XMLHttpRequest是怎么实现的？.md"
+    "工作/求职&发展/nzpC559.tmp"
   ]
 }
