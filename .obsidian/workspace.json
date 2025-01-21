@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "462c8f6c5b008e7a",
+        "id": "1f95dde179aa13d6",
         "type": "tabs",
         "children": [
           {
-            "id": "c4ec1d347e00efaa",
+            "id": "84958fea8c867625",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "工作/技术文章/VSCode Debug技巧.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "VSCode Debug技巧"
+              "title": "新标签页"
             }
           }
         ]
@@ -138,11 +134,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "工作/技术文章/VSCode Debug技巧.md"
-              },
+              "state": {},
               "icon": "lucide-list",
-              "title": "VSCode Debug技巧 的大纲"
+              "title": "大纲"
             }
           }
         ],
@@ -179,8 +173,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c4ec1d347e00efaa",
+  "active": "84958fea8c867625",
   "lastOpenFiles": [
+    "-1-临时/日记/2025-01-20.md",
+    "工作/技术文章/VSCode Debug技巧.md",
     "工作/技术文章/images/Pasted image 20250121153723.png",
     "工作/技术文章/images/Pasted image 20250121153708.png",
     "工作/技术文章/images/Pasted image 20250121153657.png",
@@ -191,9 +187,7 @@
     "工作/技术文章/images/Pasted image 20250121153519.png",
     "工作/技术文章/images/Pasted image 20250121153508.png",
     "工作/技术文章/images/Pasted image 20250121153443.png",
-    "工作/技术文章/images/Pasted image 20250121153415.png",
     "工作/技术文章/vscode二次开发.md",
-    "工作/技术文章/VSCode Debug技巧.md",
     "工作/技术文章/webpack4优化.md",
     "工作/技术文章/学习RuoYi-Vue前端框架.md",
     "工作/技术文章/prompts temp.md",
