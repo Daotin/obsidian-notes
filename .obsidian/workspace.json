@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "1f95dde179aa13d6",
+        "id": "b24d735ab2a086e9",
         "type": "tabs",
         "children": [
           {
-            "id": "84958fea8c867625",
+            "id": "94b40a0ab5c13623",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "-1-临时/日记/2025-01-20.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "2025-01-20"
             }
           }
         ]
@@ -134,9 +138,11 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {},
+              "state": {
+                "file": "-1-临时/日记/2025-01-20.md"
+              },
               "icon": "lucide-list",
-              "title": "大纲"
+              "title": "2025-01-20 的大纲"
             }
           }
         ],
@@ -173,7 +179,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "84958fea8c867625",
+  "active": "94b40a0ab5c13623",
   "lastOpenFiles": [
     "-1-临时/日记/2025-01-20.md",
     "工作/技术文章/VSCode Debug技巧.md",
