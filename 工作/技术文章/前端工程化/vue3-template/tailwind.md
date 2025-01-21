@@ -205,23 +205,22 @@ module.exports = {
 JIT 模式
 
 - 闪电般的快速构建时间
-- 能够使用[]语法
+- 能够使用`[]`语法
 - 您的 CSS 在开发和生产中是相同的，因为是即时生成的
 - 开发中更好的浏览器性能
 
-::: warning
+>[!warning]
+> 从 Tailwind CSS v2.1 开始，新的 JIT 引擎就包含在 Tailwind CSS 本身中，因此您不再需要 `@tailwindcss/jit` 包。但是在 2.x 中需要在写上下面内容：
+>
+> ```JavaScript
+> module.exports = {
+>    mode: 'jit',
+>   // ...
+> }
+> ```
+> 
+> 而在 v3.0 中，Tailwind 内置了 JIT，无需在配置文件里面声明 JIT 模式，默认就是按需构建、可使用任意辅助类、开发和生产构建方式与产物统一，避免了不一致性、还获得了极大的性能优化。
 
-从 Tailwind CSS v2.1 开始，新的 JIT 引擎就包含在 Tailwind CSS 本身中，因此您不再需要 `@tailwindcss/jit` 包。但是在 2.x 中需要在写上下面内容：
-
-```JavaScript
-module.exports = {
-  mode: 'jit',
-  // ...
-}
-```
-
-而在 v3.0 中，Tailwind 内置了 JIT，无需在配置文件里面声明 JIT 模式，默认就是按需构建、可使用任意辅助类、开发和生产构建方式与产物统一，避免了不一致性、还获得了极大的性能优化。
-:::
 
 比如：临时设置一些值，可以用 `[]` 语法。
 

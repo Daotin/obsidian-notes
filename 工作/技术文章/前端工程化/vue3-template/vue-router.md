@@ -243,9 +243,8 @@ export default router;
 - 判断用户是否已登录，未登录则跳转到登录页。
 - 设置页面 title
 
-:::tip
+>[!tip]
 使用 axios 的响应拦截也可以，但是会先进入页面，调用接口后才跳转到登录页，体验不好。
-:::
 
 一般，用户登录后，会把 token 和个人信息放在 store 里面（token 也会放在 localStorage 中），我们只需要在全局守卫里面获取 token 然后判断即可。
 

@@ -153,6 +153,11 @@ export const apiGetMenuList = () => request.post('/sys/menus');
 
 ### axios 基本使用
 
+安装
+```bash
+npm install axios -S
+```
+
 安装好依赖后，在使用的地方直接引入就可以了：
 
 ```html
@@ -182,7 +187,204 @@ axios.defaults.timeout = 20000;
 2. 增加重复请求的取消
 3. 对外统一接口
 
-具体代码如上面第二步骤。
+示例代码：
+
+```tsx
+import axios, { AxiosRequestConfig, AxiosInstance } from "axios";
+import { baseURL } from "@/config/domain";
+import { TokenName } from "@/config/const";
+import { useAppStoreWithOut } from "@/store";
+import { usePermission } from "@/hooks";
+import router from "@/router";
+import { localMng } from "@/utils/storage-mng";
+import md5 from "md5";
+
+class Request {
+  private baseConfig: AxiosRequestConfig = {
+    baseURL,
+    headers: {},
+    timeout: 20000,
+  };
+
+  private instance: AxiosInstance = axios.create(this.baseConfig);
+  private pending: any = {}; // 存储key值
+  private controller = new AbortController();// 一个控制器对象，允许中止一个或多个 Web 请求。
+
+  public constructor() {
+    console.log('==>Request constructor')
+    const token = localMng.getItem(TokenName);
+    if (token) {
+      this.setHeader({
+        Authorization: token,
+      });
+    } else {
+      this.initInstance();
+    }
+  }
+
+  private initInstance() {
+    this.instance = axios.create(this.baseConfig);
+    this.setReqInterceptors();
+    this.setResInterceptors();
+  }
+
+  // 请求拦截器
+  private setReqInterceptors = () => {
+    this.instance.interceptors.request.use(
+      (config) => {
+        // const { checkApiPermission } = usePermission()
+        // config.cancelToken = new axios.CancelToken(function executor(c) {
+          // if (!checkApiPermission(config.url)) {
+          //   c(config.url + '没有权限')
+          //   router.push('/error/forbidden')
+          // }
+        // });
+
+        console.log('pending==>',this.pending)
+
+        // 计算当前请求key值
+        const key = this.getRequestKey(config);
+        if (this.checkPending(key)) {
+          // 重复请求则取消当前请求
+          config.signal = this.controller.signal;
+          // 取消请求
+          this.controller.abort()
+        } else {
+          // 加入请求字典
+          this.pending[key] = true;
+        }
+
+        // console.log(`%c++++++ 开始请求：${config.url} ++++++`, "color:green");
+        // console.log(config.data);
+        // console.log(`%c++++++ end ++++++`, "color:green");
+        return config;
+      },
+      (err) => {
+        window.$message.error("请求失败");
+        return Promise.reject(err);
+      }
+    );
+  };
+
+  // 响应拦截器
+  private setResInterceptors = () => {
+    this.instance.interceptors.response.use(
+      (res) => {
+        const { code = 200, body, message } = res.data;
+
+				// 请求完成，删除请求中状态
+        const key = this.getRequestKey(res.config);
+        this.removePending(key);
+
+        switch (code) {
+          case 200:
+            return Promise.resolve(body || res.data);
+          case 401:
+            window.$message.warning(message || "无权限");
+            const appStore = useAppStoreWithOut();
+            appStore.logout(false);
+            return Promise.reject(res.data);
+          default:
+            window.$message.error(message || "响应失败");
+            return Promise.reject(res.data);
+        }
+      },
+      (err) => {
+        if (!axios.isCancel(err)) {
+          window.$message.error("响应失败");
+        }
+        return Promise.reject(err);
+      }
+    );
+  };
+
+  // 设置请求头
+  public setHeader = (headers: any) => {
+    this.baseConfig.headers = { ...this.baseConfig.headers, ...headers };
+    this.initInstance();
+  };
+
+  // 检查key值
+  private checkPending = (key) => !!this.pending[key];
+
+  // 删除key值
+  private removePending = (key) => {
+    delete this.pending[key];
+  };
+
+  // 可以根据请求的地址，方式，参数，统一计算出当前请求的md5值作为key
+  private getRequestKey = (config) => {
+    if (!config) {
+      // 如果没有获取到请求的相关配置信息，根据时间戳生成
+      return md5(+new Date());
+    }
+    const data =
+      typeof config.data === "string"
+        ? config.data
+        : JSON.stringify(config.data);
+    return md5(config.url + "&" + config.method + "&" + data);
+  };
+
+  // get请求
+  public get = (
+    url: string,
+    data = {},
+    config: AxiosRequestConfig<any> = {}
+  ): Promise<any> =>
+    this.instance({ url, method: "get", params: data, ...config });
+
+  // post请求
+  public post = (
+    url: string,
+    data = {},
+    config: AxiosRequestConfig<any> = {}
+  ): Promise<any> => this.instance({ url, method: "post", data, ...config });
+
+  // 不经过统一的axios实例的get请求
+  public postOnly = (
+    url: string,
+    data = {},
+    config: AxiosRequestConfig<any> = {}
+  ): Promise<any> =>
+    axios({
+      ...this.baseConfig,
+      url,
+      method: "post",
+      data,
+      ...config,
+    });
+
+  // 不经过统一的axios实例的post请求
+  public getOnly = (
+    url: string,
+    data = {},
+    config: AxiosRequestConfig<any> = {}
+  ): Promise<any> =>
+    axios({
+      ...this.baseConfig,
+      url,
+      method: "get",
+      params: data,
+      ...config,
+    });
+
+  // delete请求
+  public deleteBody = (
+    url: string,
+    data = {},
+    config: AxiosRequestConfig<any> = {}
+  ): Promise<any> => this.instance({ url, method: "delete", data, ...config });
+
+  public deleteParam = (
+    url: string,
+    data = {},
+    config: AxiosRequestConfig<any> = {}
+  ): Promise<any> =>
+    this.instance({ url, method: "delete", params: data, ...config });
+}
+
+export default new Request();
+```
 
 上面我们使封着的一个**类**的形式，或者采用另一种**导出实例**的方式进行封装，也是可以的：
 
@@ -302,6 +504,9 @@ export default instance;
 
 我们对每个请求生成一个独一无二的 key 值，在发送请求的时候，将这个 key 值保存起来，当有重复的请求发送时，我们判断当前 key 值的请求正在进行中，就调用 aixos 提供的取消请求的方法取消当前请求，请求返回后，再将 key 值从保存中移除，让下一次请求可以成功发送。
 
+>[!warning]
+>但是需要注意，并不是所有的项目都需要取消重复接口操作，因为比如有的处理是后端处理，然后前端轮询查询，这个时候就是不合适的。
+
 取消重复请求具体代码如下：
 
 ```ts
@@ -400,9 +605,9 @@ class Request {
 export default new Request();
 ```
 
-::: tip
+> [!tip]
 AbortController 兼容性：Chrome > 66，不支持 IE11
-:::
+
 
 #### 在路由跳转的时候取消所有请求
 
@@ -478,7 +683,7 @@ router.beforeEach(async (to) => {
 
 #### 前端取消请求有意义吗？
 
-事实上，这个 Ajax 取消只是前端“自说自话”，后端其实依然有可能收到了请求并进行处理。
+事实上，这个 Ajax 取消只是前端“自说自话”，**后端其实依然有可能收到了请求并进行处理**。
 
 在前端发起一个请求后，如果在请求还未结束时取消该请求，那么该请求可能已经被发送到后端并且后端已经开始处理该请求。这是因为 HTTP 协议是基于请求-响应模型的，一旦请求被发送到后端，后端就开始处理该请求，即使前端已经取消了该请求。因此，取消请求只是在前端停止等待该请求的响应，并不会影响后端已经开始处理该请求的事实。
 

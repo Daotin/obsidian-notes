@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "-1-临时/日记/2025-01-20.md",
+                "file": "工作/技术文章/webpack4优化.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-01-20"
+              "title": "webpack4优化"
             }
           }
         ]
@@ -52,7 +52,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "直面焦虑烦恼",
+                "query": "独挡一面",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -77,7 +77,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 263.5
+    "width": 340.5
   },
   "right": {
     "id": "c3393ec6a15ea009",
@@ -139,12 +139,19 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "工作/学习方法/10x程序员工作法.md"
+                "file": "工作/技术文章/webpack4优化.md"
               },
               "icon": "lucide-list",
-              "title": "10x程序员工作法 的大纲"
+              "title": "webpack4优化 的大纲"
             }
-          },
+          }
+        ],
+        "currentTab": 3
+      },
+      {
+        "id": "450b10245e3ba1cb",
+        "type": "tabs",
+        "children": [
           {
             "id": "034a4ecb25f0c525",
             "type": "leaf",
@@ -155,8 +162,7 @@
               "title": "Source Control"
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "horizontal",
@@ -173,54 +179,54 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "89d58224b5279b73",
+  "active": "c4ec1d347e00efaa",
   "lastOpenFiles": [
+    "工作/技术文章/images/Pasted image 20250121152323.png",
+    "工作/技术文章/images/Untitled 5.png",
+    "工作/技术文章/webpack4优化.md",
+    "工作/技术文章/images/Untitled 1 1.png",
+    "工作/技术文章/images/Pasted image 20250121152242.png",
+    "工作/技术文章/images/Pasted image 20250121152206.png",
+    "工作/技术文章/images/Untitled 4.png",
+    "工作/技术文章/学习RuoYi-Vue前端框架.md",
+    "工作/技术文章/prompts temp.md",
+    "工作/0业务相关/whty/国际云v1.6.0迭代复盘.md",
+    "工作/技术文章/搭建前端组件库.md",
+    "工作/技术文章/前端工程化/vue3-template/tailwind.md",
+    "工作/0业务相关/团队规范/前端业务UI规范.md",
+    "工作/技术文章/vue源码学习.md",
+    "工作/技术文章/vue3 svg预览组件.md",
+    "工作/技术文章/vue2 自动注册全局组件.md",
+    "工作/技术文章/vue3 hooks思考.md",
+    "工作/技术文章/Bit vs npm私有库.md",
+    "工作/技术文章/安装一个依赖失败如何分析？.md",
+    "工作/技术文章/vue3 KeepAlive原理.md",
+    "工作/技术文章/前端异常监控系统-搭建原理.md",
+    "工作/技术文章/Echarts配置表.md",
+    "工作/求职&发展/职业发展/职场认知/领导关注的3点2023-4-6.md",
+    "工作/技术文章/前端工程化/vue3-template/use函数库-todo.md",
+    "工作/技术文章/前端工程化/vue3-template/待办任务.md",
+    "工作/技术文章/前端工程化/vue3-template/组件封装-todo.md",
+    "工作/技术文章/ESLint+Prettier.md",
+    "工作/技术文章/前端进阶训练营/学习安排.md",
+    "工作/技术文章/前端进阶训练营/开班直播.md",
+    "工作/技术文章/前端工程化/vue3-template/storage封装.md",
+    "工作/技术文章/前端工程化/vue3-template/pinia.md",
     "-1-临时/日记",
     "未命名.canvas",
-    "-1-临时/日记/2025-01-20.md",
-    "工作/0业务相关/whty/开发项目/重庆通卡/渝通行APP二期需求.md",
-    "-1-临时/AI+前端.md",
-    "Obsidian使用技巧.md",
-    "生活/健身打卡.md",
-    "工作/学习方法/10x程序员工作法.md",
-    "工作/学习方法/本节课的目的.md",
-    "工作/学习方法/index.md",
-    "工作/求职&发展/职业发展/向上管理/如何让领导给你安排有技术深度的事情？.md",
-    "工作/0业务相关/团队规范/☢️开发注意清单.md",
-    "工作/技术文章/npm.md",
     "-1-临时",
     "工作/技术文章/images/Pasted image 20250118105109.png",
-    "工作/技术文章/Git常见问题.md",
-    "工作/求职&发展/职业发展/职场认知/直面焦虑烦恼，谈怎么成长.md",
-    "工作/技术文章/代码抽审和走查.md",
-    "工作/技术文章/安装一个依赖失败如何分析？.md",
-    "工作/技术文章/vue3 hooks思考.md",
-    "工作/技术文章/vue2 自动注册全局组件.md",
-    "工作/技术文章/vscode二次开发.md",
-    "工作/技术文章/svg预览组件.md",
-    "工作/技术文章/sonarQube简单介绍.md",
-    "工作/技术文章/ESLint+Prettier.md",
-    "工作/技术文章/Electron 的运行原理是什么.md",
     "工作/技术文章/images/Untitled.png",
     "工作/技术文章/images/Untitled 3.png",
     "工作/技术文章/images/Untitled 2.png",
     "工作/技术文章/images/Untitled 1.png",
     "工作/技术文章/images",
-    "工作/技术文章/temp/ESLint+Prettier.md",
-    "工作/技术文章/temp/images/Untitled.png",
-    "工作/技术文章/temp/images/Untitled 3.png",
-    "工作/技术文章/temp/images/Untitled 2.png",
-    "工作/技术文章/temp/images/Untitled 1.png",
     "工作/技术文章/temp/images",
     "工作/技术文章/temp/新建文件夹",
-    "工作/求职&发展/试用期/如何在新公司快速落地.md",
-    "工作/求职&发展/职业发展/职场认知/10-思维转变.md",
-    "工作/求职&发展/职业发展/职场认知/images/Untitled 11.png",
     "工作/求职&发展/职业发展/职场认知/images",
     "工作/0业务相关/whty/其他",
     "工作/0业务相关/团队规范/images",
     "工作/0业务相关/whty/开发项目/重庆通卡",
-    "工作/0业务相关/whty/开发项目",
-    "工作/求职&发展/nzpC559.tmp"
+    "工作/0业务相关/whty/开发项目"
   ]
 }

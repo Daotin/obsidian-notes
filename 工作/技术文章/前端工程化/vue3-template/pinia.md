@@ -103,6 +103,25 @@ Vuex 由于在 API 的设计上，对 TypeScript 的类型推导的支持比较�
 - app.ts：整个项目共用的状态
 - xxx.ts：某个模块共用的状态
 
+index.ts 统一暴露全局状态
+
+```tsx
+import { createPinia } from "pinia";
+const store = createPinia();
+export default store;
+export * from "./modules/app";
+export * from "./modules/xxx";
+```
+
+在main.ts中使用：
+
+```tsx
+import router from "./router";
+
+...
+app.use(router);
+```
+
 ### app.ts 需要统一存储的状态
 
 公共数据：
