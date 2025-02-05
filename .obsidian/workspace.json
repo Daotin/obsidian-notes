@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "生活/“安全动力型”人格如何激发学习动力？.md",
+                "file": "生活/男生保养秘籍.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "“安全动力型”人格如何激发学习动力？"
+              "title": "男生保养秘籍"
             }
           }
         ]
@@ -140,10 +140,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "生活/“安全动力型”人格如何激发学习动力？.md"
+                "file": "生活/男生保养秘籍.md"
               },
               "icon": "lucide-list",
-              "title": "“安全动力型”人格如何激发学习动力？ 的大纲"
+              "title": "男生保养秘籍 的大纲"
             }
           }
         ],
@@ -183,8 +183,10 @@
   },
   "active": "3b34234198d7ebd4",
   "lastOpenFiles": [
-    "-1-临时/日记/2025-01-20.md",
+    "生活/健身打卡.md",
+    "生活/男生保养秘籍.md",
     "生活/“安全动力型”人格如何激发学习动力？.md",
+    "-1-临时/日记/2025-01-20.md",
     "工作/技术文章/VSCode Debug技巧.md",
     "工作/技术文章/images/Pasted image 20250121153723.png",
     "工作/技术文章/images/Pasted image 20250121153708.png",
@@ -217,8 +219,6 @@
     "工作/技术文章/前端工程化/vue3-template/use函数库-todo.md",
     "工作/技术文章/前端工程化/vue3-template/待办任务.md",
     "工作/技术文章/前端工程化/vue3-template/组件封装-todo.md",
-    "工作/技术文章/ESLint+Prettier.md",
-    "工作/技术文章/前端进阶训练营/学习安排.md",
     "-1-临时/日记",
     "未命名.canvas",
     "-1-临时",
