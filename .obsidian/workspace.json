@@ -13,12 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "生活/男生保养秘籍.md",
+                "file": "工作/0业务相关/whty/开发项目/重庆通卡/2期-乘车码H5.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "男生保养秘籍"
+              "title": "2期-乘车码H5"
+            }
+          },
+          {
+            "id": "e7821976a220dc62",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "工作/职业发展/index.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "index"
             }
           }
         ]
@@ -40,7 +54,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "文件列表"
@@ -52,7 +67,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "独挡一面",
+                "query": "这样的感受",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -140,10 +155,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "生活/男生保养秘籍.md"
+                "file": "工作/0业务相关/whty/开发项目/重庆通卡/2期-乘车码H5.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "男生保养秘籍 的大纲"
+              "title": "2期-乘车码H5 的大纲"
             }
           }
         ],
@@ -181,54 +199,54 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "3b34234198d7ebd4",
+  "active": "89d58224b5279b73",
   "lastOpenFiles": [
-    "生活/健身打卡.md",
-    "生活/男生保养秘籍.md",
-    "生活/“安全动力型”人格如何激发学习动力？.md",
-    "-1-临时/日记/2025-01-20.md",
-    "工作/技术文章/VSCode Debug技巧.md",
-    "工作/技术文章/images/Pasted image 20250121153723.png",
-    "工作/技术文章/images/Pasted image 20250121153708.png",
-    "工作/技术文章/images/Pasted image 20250121153657.png",
-    "工作/技术文章/images/Pasted image 20250121153643.png",
-    "工作/技术文章/images/Pasted image 20250121153629.png",
-    "工作/技术文章/images/Pasted image 20250121153607.png",
-    "工作/技术文章/images/Pasted image 20250121153532.png",
-    "工作/技术文章/images/Pasted image 20250121153519.png",
-    "工作/技术文章/images/Pasted image 20250121153508.png",
-    "工作/技术文章/images/Pasted image 20250121153443.png",
-    "工作/技术文章/vscode二次开发.md",
-    "工作/技术文章/webpack4优化.md",
-    "工作/技术文章/学习RuoYi-Vue前端框架.md",
-    "工作/技术文章/prompts temp.md",
-    "工作/0业务相关/whty/国际云v1.6.0迭代复盘.md",
-    "工作/技术文章/搭建前端组件库.md",
-    "工作/技术文章/前端工程化/vue3-template/tailwind.md",
-    "工作/0业务相关/团队规范/前端业务UI规范.md",
-    "工作/技术文章/vue源码学习.md",
-    "工作/技术文章/vue3 svg预览组件.md",
-    "工作/技术文章/vue2 自动注册全局组件.md",
-    "工作/技术文章/vue3 hooks思考.md",
-    "工作/技术文章/Bit vs npm私有库.md",
-    "工作/技术文章/安装一个依赖失败如何分析？.md",
-    "工作/技术文章/vue3 KeepAlive原理.md",
-    "工作/技术文章/前端异常监控系统-搭建原理.md",
-    "工作/技术文章/Echarts配置表.md",
-    "工作/求职&发展/职业发展/职场认知/领导关注的3点2023-4-6.md",
-    "工作/技术文章/前端工程化/vue3-template/use函数库-todo.md",
-    "工作/技术文章/前端工程化/vue3-template/待办任务.md",
-    "工作/技术文章/前端工程化/vue3-template/组件封装-todo.md",
+    "工作/0业务相关/whty/开发项目/重庆通卡/人员.md",
+    "工作/0业务相关/whty/开发项目/重庆通卡/渝通行APP二期需求.md",
+    "工作/0业务相关/whty/开发项目/重庆通卡/vpn+服务器.md",
+    "工作/团队规范/☢️开发注意清单.md",
+    "工作/职业发展/index.md",
+    "工作/职业发展/职场认知/如何让领导给你安排有技术深度的事情？.md",
+    "工作/职业发展/职场认知/对上管理-犬校.md",
+    "工作/职业发展/职场认知/10-思维转变-如何提高自己的职业能力？.md",
+    "工作/0业务相关/whty/开发项目/重庆通卡/images/Pasted image 20250219133702.png",
+    "工作/0业务相关/whty/开发项目/重庆通卡/images",
+    "工作/0业务相关/whty/开发项目/重庆通卡/2期-乘车码H5.md",
+    "工作/学习方法/学习方法-10000 小时定律.md",
+    "工作/学习方法/大厂晋升指南/学习方法-10000 小时定律.md",
+    "工作/学习方法/images/image_R-w_mC4fT9.png",
+    "工作/学习方法/images/image_RbcPcdY1S7.png",
+    "工作/学习方法/images/image_MSMX3-h7Fz.png",
+    "工作/学习方法/images/image_FHUFNmk4Lk.png",
+    "工作/学习方法/images/image_CxIxKawoyH.png",
+    "工作/学习方法/images/image_bFv9IWwOTn.png",
+    "-1-临时/✅TODO.md",
+    "-1-临时/AI前端/AI+CR.md",
+    "-1-临时/AI前端/全链路AI驱动的前端开发解决方案.md",
+    "-1-临时/AI前端/自动删除 FG.md",
+    "-1-临时/AI前端/AI生成UI组件库.md",
+    "-1-临时/AI前端/AI检测未被使用的依赖？.md",
+    "-1-临时/AI前端/v0.dev+cursor工作流.md",
+    "-1-临时/AI前端/lowcode-vscode.md",
+    "-1-临时/AI前端/AI+前端.md",
+    "-1-临时/AI前端",
+    "-1-临时/yarn指令.md",
+    "工作/学习方法/2-如何学习一门技术.md",
+    "工作/职业发展/向上管理/如何让领导给你安排有技术深度的事情？.md",
+    "工作/职业发展/向上管理/对上管理-犬校.md",
+    "工作/职业发展/职场认知/2023前端职业路怎么走？.md",
+    "工作/职业发展/职场认知/程序员到创业的思维转变.md",
+    "工作/0业务相关/团队规范/~$物联网云上线规范.xlsx",
+    "工作/团队规范/images/Untitled.jpeg",
+    "技术文章/images/Pasted image 20250121153723.png",
+    "技术文章/images/Pasted image 20250121153708.png",
     "-1-临时/日记",
     "未命名.canvas",
     "-1-临时",
-    "工作/技术文章/images",
+    "技术文章/images",
     "工作/技术文章/temp/images",
     "工作/技术文章/temp/新建文件夹",
-    "工作/求职&发展/职业发展/职场认知/images",
-    "工作/0业务相关/whty/其他",
-    "工作/0业务相关/团队规范/images",
-    "工作/0业务相关/whty/开发项目/重庆通卡",
-    "工作/0业务相关/whty/开发项目"
+    "工作/职业发展/职场认知/images",
+    "工作/0业务相关/whty/其他"
   ]
 }

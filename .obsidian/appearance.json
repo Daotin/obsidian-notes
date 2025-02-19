@@ -1,7 +1,8 @@
 {
   "cssTheme": "Border",
-  "textFontFamily": "霞鹜文楷 屏幕阅读版,霞鹜文楷 GB 屏幕阅读版,更纱黑体 SC,思源黑体",
-  "monospaceFontFamily": "JetBrains Mono",
+  "textFontFamily": "",
+  "monospaceFontFamily": "",
   "theme": "system",
-  "baseFontSize": 16
+  "baseFontSize": 16,
+  "accentColor": ""
 }
