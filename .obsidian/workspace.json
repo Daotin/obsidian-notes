@@ -13,26 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "技术文章/vue源码学习.md",
+                "file": "-1-临时/✅TODO.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "vue源码学习"
-            }
-          },
-          {
-            "id": "e7821976a220dc62",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "工作/职业发展/index.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "index"
+              "title": "✅TODO"
             }
           }
         ]
@@ -155,13 +141,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "技术文章/vue源码学习.md",
+                "file": "-1-临时/✅TODO.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "vue源码学习 的大纲"
+              "title": "✅TODO 的大纲"
             }
           }
         ],
@@ -199,8 +185,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "89d58224b5279b73",
+  "active": "3b34234198d7ebd4",
   "lastOpenFiles": [
+    "README.md",
+    "-1-临时/✅TODO.md",
+    "-1-临时/AI前端/AI赋能前端研发从0～1.md",
+    "技术文章/vue源码学习.md",
     "工作/0业务相关/whty/开发项目/重庆通卡/2期-乘车码H5.md",
     "工作/0业务相关/whty/开发项目/重庆通卡/人员.md",
     "工作/0业务相关/whty/开发项目/重庆通卡/渝通行APP二期需求.md",
@@ -220,7 +210,6 @@
     "工作/学习方法/images/image_FHUFNmk4Lk.png",
     "工作/学习方法/images/image_CxIxKawoyH.png",
     "工作/学习方法/images/image_bFv9IWwOTn.png",
-    "-1-临时/✅TODO.md",
     "-1-临时/AI前端/AI+CR.md",
     "-1-临时/AI前端/全链路AI驱动的前端开发解决方案.md",
     "-1-临时/AI前端/自动删除 FG.md",
@@ -233,9 +222,6 @@
     "-1-临时/yarn指令.md",
     "工作/学习方法/2-如何学习一门技术.md",
     "工作/职业发展/向上管理/如何让领导给你安排有技术深度的事情？.md",
-    "工作/职业发展/向上管理/对上管理-犬校.md",
-    "工作/职业发展/职场认知/2023前端职业路怎么走？.md",
-    "工作/职业发展/职场认知/程序员到创业的思维转变.md",
     "工作/0业务相关/团队规范/~$物联网云上线规范.xlsx",
     "工作/团队规范/images/Untitled.jpeg",
     "技术文章/images/Pasted image 20250121153723.png",

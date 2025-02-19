@@ -13,7 +13,7 @@ Vue2原理
     - [ ] 2️⃣ [https://github.com/answershuto/learnVue](https://github.com/answershuto/learnVue) — 《Vue.js 源码解析》Vue.js（2.3.0）
     - [ ] [https://www.qinguanghui.com/vue/](https://www.qinguanghui.com/vue/)
     - [ ] [http://caibaojian.com/vue-design/art/](http://caibaojian.com/vue-design/art/)
-    - [ ] [https://ustbhuangyi.github.io/vue-analysis/v2/prepare/](https://ustbhuangyi.github.io/vue-analysis/v2/prepare/)
+    - [ ] [Vue.js 技术揭秘](https://ustbhuangyi.github.io/vue-analysis/v2/prepare/)
     - [ ] [https://nlrx-wjc.github.io/Learn-Vue-Source-Code/](https://nlrx-wjc.github.io/Learn-Vue-Source-Code/)
 - [ ] 3️⃣ [https://github.com/muwoo/blogs](https://github.com/muwoo/blogs) — Vuejs 2.x 技术揭秘（基于 2.5.x 版本，关于Vue的源码解读）
 - [ ] 4️⃣ [解析 Vue.js 的实现原理](https://ustbhuangyi.github.io/vue-analysis/)（Vue.js 2.5.17-beta.0）
