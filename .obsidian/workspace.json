@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "工作/0业务相关/whty/开发项目/重庆通卡/2期-乘车码H5.md",
+                "file": "技术文章/vue源码学习.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2期-乘车码H5"
+              "title": "vue源码学习"
             }
           },
           {
@@ -55,7 +55,7 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": true
               },
               "icon": "lucide-folder-closed",
               "title": "文件列表"
@@ -67,7 +67,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "这样的感受",
+                "query": "ustbhuangyi",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -155,13 +155,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "工作/0业务相关/whty/开发项目/重庆通卡/2期-乘车码H5.md",
+                "file": "技术文章/vue源码学习.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "2期-乘车码H5 的大纲"
+              "title": "vue源码学习 的大纲"
             }
           }
         ],
@@ -201,6 +201,7 @@
   },
   "active": "89d58224b5279b73",
   "lastOpenFiles": [
+    "工作/0业务相关/whty/开发项目/重庆通卡/2期-乘车码H5.md",
     "工作/0业务相关/whty/开发项目/重庆通卡/人员.md",
     "工作/0业务相关/whty/开发项目/重庆通卡/渝通行APP二期需求.md",
     "工作/0业务相关/whty/开发项目/重庆通卡/vpn+服务器.md",
@@ -211,7 +212,6 @@
     "工作/职业发展/职场认知/10-思维转变-如何提高自己的职业能力？.md",
     "工作/0业务相关/whty/开发项目/重庆通卡/images/Pasted image 20250219133702.png",
     "工作/0业务相关/whty/开发项目/重庆通卡/images",
-    "工作/0业务相关/whty/开发项目/重庆通卡/2期-乘车码H5.md",
     "工作/学习方法/学习方法-10000 小时定律.md",
     "工作/学习方法/大厂晋升指南/学习方法-10000 小时定律.md",
     "工作/学习方法/images/image_R-w_mC4fT9.png",
