@@ -185,17 +185,16 @@ build: {
 >
 > 解决办法：修改manualChunks配置。伪代码如下（路径可能不对）：就是将大文件拆分成自定义名字的小文件。
 >
-> ```javascript
-> manualChunks: (id) => {
->     if (id.includes('node_modules')) {
->       // 如果是 Element Plus 组件，不用打包成一个单独的包
->       if (!id.includes('node_modules/element-plus')) {
->         return id.toString().split('node_modules/')[1].split('/')[0].toString()
->       }
->     }
->   },
->
-> ```
+```javascript
+manualChunks: (id) => {
+    if (id.includes('node_modules')) {
+      // 如果是 Element Plus 组件，不用打包成一个单独的包
+      if (!id.includes('node_modules/element-plus')) {
+        return id.toString().split('node_modules/')[1].split('/')[0].toString()
+      }
+    }
+  },
+```
 >
 > 其他的包如果很大，也可以像element-plus一样排除掉。
 

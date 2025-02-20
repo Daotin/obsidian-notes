@@ -8,17 +8,13 @@
         "type": "tabs",
         "children": [
           {
-            "id": "3b34234198d7ebd4",
+            "id": "01dd955702b4e147",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "-1-临时/✅TODO.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "✅TODO"
+              "title": "新标签页"
             }
           }
         ]
@@ -53,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "ustbhuangyi",
+                "query": "optimizeDeps",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -141,13 +137,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "-1-临时/✅TODO.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "✅TODO 的大纲"
+              "title": "大纲"
             }
           }
         ],
@@ -172,7 +167,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 343
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -185,54 +180,54 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "3b34234198d7ebd4",
+  "active": "01dd955702b4e147",
   "lastOpenFiles": [
-    "README.md",
-    "-1-临时/✅TODO.md",
-    "-1-临时/AI前端/AI赋能前端研发从0～1.md",
-    "技术文章/vue源码学习.md",
-    "工作/0业务相关/whty/开发项目/重庆通卡/2期-乘车码H5.md",
-    "工作/0业务相关/whty/开发项目/重庆通卡/人员.md",
-    "工作/0业务相关/whty/开发项目/重庆通卡/渝通行APP二期需求.md",
-    "工作/0业务相关/whty/开发项目/重庆通卡/vpn+服务器.md",
-    "工作/团队规范/☢️开发注意清单.md",
-    "工作/职业发展/index.md",
-    "工作/职业发展/职场认知/如何让领导给你安排有技术深度的事情？.md",
-    "工作/职业发展/职场认知/对上管理-犬校.md",
-    "工作/职业发展/职场认知/10-思维转变-如何提高自己的职业能力？.md",
-    "工作/0业务相关/whty/开发项目/重庆通卡/images/Pasted image 20250219133702.png",
-    "工作/0业务相关/whty/开发项目/重庆通卡/images",
-    "工作/学习方法/学习方法-10000 小时定律.md",
-    "工作/学习方法/大厂晋升指南/学习方法-10000 小时定律.md",
-    "工作/学习方法/images/image_R-w_mC4fT9.png",
-    "工作/学习方法/images/image_RbcPcdY1S7.png",
-    "工作/学习方法/images/image_MSMX3-h7Fz.png",
-    "工作/学习方法/images/image_FHUFNmk4Lk.png",
-    "工作/学习方法/images/image_CxIxKawoyH.png",
-    "工作/学习方法/images/image_bFv9IWwOTn.png",
-    "-1-临时/AI前端/AI+CR.md",
-    "-1-临时/AI前端/全链路AI驱动的前端开发解决方案.md",
-    "-1-临时/AI前端/自动删除 FG.md",
-    "-1-临时/AI前端/AI生成UI组件库.md",
-    "-1-临时/AI前端/AI检测未被使用的依赖？.md",
-    "-1-临时/AI前端/v0.dev+cursor工作流.md",
-    "-1-临时/AI前端/lowcode-vscode.md",
-    "-1-临时/AI前端/AI+前端.md",
-    "-1-临时/AI前端",
-    "-1-临时/yarn指令.md",
-    "工作/学习方法/2-如何学习一门技术.md",
-    "工作/职业发展/向上管理/如何让领导给你安排有技术深度的事情？.md",
-    "工作/0业务相关/团队规范/~$物联网云上线规范.xlsx",
-    "工作/团队规范/images/Untitled.jpeg",
-    "技术文章/images/Pasted image 20250121153723.png",
-    "技术文章/images/Pasted image 20250121153708.png",
-    "-1-临时/日记",
-    "未命名.canvas",
-    "-1-临时",
-    "技术文章/images",
-    "工作/技术文章/temp/images",
-    "工作/技术文章/temp/新建文件夹",
-    "工作/职业发展/职场认知/images",
-    "工作/0业务相关/whty/其他"
+    "技术文章/vue3原理剖析/学习资料.md",
+    "技术文章/vue2组件精讲.md",
+    "技术文章/vue2组件精讲/vue2组件精讲.md",
+    "技术文章/专栏技术/性能优化/前端性能优化.md",
+    "技术文章/性能优化/images/vFeP7iWDjB.png",
+    "技术文章/性能优化/images/NOX_nx-nVccubS.png",
+    "技术文章/性能优化/images/img-20240505170593.png",
+    "技术文章/性能优化/images/img-20240505170586.png",
+    "技术文章/性能优化/images/img-20240505150595.png",
+    "技术文章/性能优化/images/img-20240505150592.png",
+    "技术文章/性能优化/images/img-20240505150582.png",
+    "技术文章/性能优化/images/img-20240505150574.png",
+    "技术文章/性能优化/images/img-20240505150524.png",
+    "技术文章/性能优化/images/img-20240505120563.png",
+    "技术文章/性能优化/vue2-webpack性能优化.md",
+    "技术文章/性能优化/通过Timing瀑布图分析前端性能问题.md",
+    "技术文章/性能优化/index.md",
+    "技术文章/性能优化/前端性能优化.md",
+    "技术文章/性能优化/images",
+    "技术文章/性能优化/关于requestAnimationFrame的理解.md",
+    "技术文章/性能优化/chrome-devtools-performance.md",
+    "技术文章/性能优化/BlueLink项目打包体积优化.md",
+    "技术文章/性能优化",
+    "技术文章/玩转vue3全家桶/temp.md",
+    "技术文章/玩转vue3全家桶/index.md",
+    "技术文章/玩转vue3全家桶/images",
+    "技术文章/玩转vue3全家桶",
+    "技术文章/浏览器工作原理/已归档/21-Chrome开发者工具：利用网络面板做性能分析.md",
+    "技术文章/浏览器工作原理/已归档/20-async↗await：使用同步的方式去写异步代码.md",
+    "技术文章/浏览器工作原理/已归档/19-Promise：使用Promise，告别回调函数.md",
+    "技术文章/浏览器工作原理/已归档/18-宏任务和微任务：不是所有任务都是一个待遇.md",
+    "技术文章/浏览器工作原理/已归档/17-WebAPI：XMLHttpRequest是怎么实现的？.md",
+    "技术文章/浏览器工作原理/已归档/16-WebAPI：setTimeout是如何实现的？.md",
+    "技术文章/浏览器工作原理/已归档/15-消息队列和事件循环：页面是怎么“活”起来的？.md",
+    "技术文章/浏览器工作原理/已归档/14-编译器和解释器：V8是如何执行一段JavaScript代码的？.md",
+    "技术文章/浏览器工作原理/已归档/13-垃圾回收：垃圾数据是如何自动回收的？.md",
+    "技术文章/浏览器工作原理/已归档/11-this：从JavaScript执行上下文的视角讲清楚this.md",
+    "技术文章/浏览器工作原理/已归档/10-作用域链和闭包：代码中出现相同的变量，JavaScript引擎是如何选择的？.md",
+    "技术文章/浏览器工作原理/已归档/08-调用栈：为什么JavaScript代码会出现栈溢出？.md",
+    "技术文章/浏览器工作原理/已归档/07-变量提升：JavaScript代码是按顺序执行的吗？.md",
+    "技术文章/浏览器工作原理/已归档",
+    "技术文章/浏览器工作原理/images",
+    "技术文章/浏览器工作原理",
+    "技术文章/webpack通关秘籍/file/全量配置模板/webpack.config3.js",
+    "技术文章/webpack通关秘籍/file/全量配置模板/webpack.config2.js",
+    "技术文章/webpack通关秘籍/file/全量配置模板/webpack.config.js",
+    "未命名.canvas"
   ]
 }

@@ -13,6 +13,11 @@
 > 这里是callout里的内容
 > [[#20 Callout blocks|callout]]内部支持双链
 > - 同样支持==MD语法==
+> ```js
+> console.log(111)
+> ```
+```
+```
 
 默认共支持**12种**类别 （可自己在 **Admonitions插件** 里添加）
 
