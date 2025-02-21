@@ -11,10 +11,14 @@
             "id": "01dd955702b4e147",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "-1-临时/✅TODO.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "✅TODO"
             }
           }
         ]
@@ -49,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "optimizeDeps",
+                "query": "tag:#1乐在其中」，给自己注入了能量，要么「2痛苦对抗」，损耗心神",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -125,7 +129,9 @@
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-tags",
               "title": "标签"
@@ -137,16 +143,17 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "-1-临时/✅TODO.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "大纲"
+              "title": "✅TODO 的大纲"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       },
       {
         "id": "450b10245e3ba1cb",
@@ -167,7 +174,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 253.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -182,6 +189,12 @@
   },
   "active": "01dd955702b4e147",
   "lastOpenFiles": [
+    "前端工程化-核心竞争力/index.md",
+    "前端工程化-核心竞争力/images/Pasted image 20250220145517.png",
+    "前端工程化-核心竞争力/cicd/CICD从入门到实践.md",
+    "-1-临时/2025-02.md",
+    "-1-临时/日记/2025-01-20.md",
+    "-1-临时/日记/2025-02-20.md",
     "技术文章/vue3原理剖析/学习资料.md",
     "技术文章/vue2组件精讲.md",
     "技术文章/vue2组件精讲/vue2组件精讲.md",
@@ -195,7 +208,6 @@
     "技术文章/性能优化/images/img-20240505150582.png",
     "技术文章/性能优化/images/img-20240505150574.png",
     "技术文章/性能优化/images/img-20240505150524.png",
-    "技术文章/性能优化/images/img-20240505120563.png",
     "技术文章/性能优化/vue2-webpack性能优化.md",
     "技术文章/性能优化/通过Timing瀑布图分析前端性能问题.md",
     "技术文章/性能优化/index.md",
@@ -217,11 +229,6 @@
     "技术文章/浏览器工作原理/已归档/16-WebAPI：setTimeout是如何实现的？.md",
     "技术文章/浏览器工作原理/已归档/15-消息队列和事件循环：页面是怎么“活”起来的？.md",
     "技术文章/浏览器工作原理/已归档/14-编译器和解释器：V8是如何执行一段JavaScript代码的？.md",
-    "技术文章/浏览器工作原理/已归档/13-垃圾回收：垃圾数据是如何自动回收的？.md",
-    "技术文章/浏览器工作原理/已归档/11-this：从JavaScript执行上下文的视角讲清楚this.md",
-    "技术文章/浏览器工作原理/已归档/10-作用域链和闭包：代码中出现相同的变量，JavaScript引擎是如何选择的？.md",
-    "技术文章/浏览器工作原理/已归档/08-调用栈：为什么JavaScript代码会出现栈溢出？.md",
-    "技术文章/浏览器工作原理/已归档/07-变量提升：JavaScript代码是按顺序执行的吗？.md",
     "技术文章/浏览器工作原理/已归档",
     "技术文章/浏览器工作原理/images",
     "技术文章/浏览器工作原理",
