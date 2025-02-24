@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "-1-临时/✅TODO.md",
-                "mode": "source",
+                "file": "技术文章/浏览器工作原理/事件循环.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "✅TODO"
+              "title": "事件循环"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#1乐在其中」，给自己注入了能量，要么「2痛苦对抗」，损耗心神",
+                "query": "渲染流程",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -87,7 +87,6 @@
       {
         "id": "5a163edeaca27405",
         "type": "tabs",
-        "dimension": 58.75984251968504,
         "children": [
           {
             "id": "1f74b0ebdde44398",
@@ -95,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "工作/学习方法/10x程序员工作法.md",
+                "file": "技术文章/浏览器工作原理/事件循环.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "10x程序员工作法 的反向链接列表"
+              "title": "事件循环 的反向链接列表"
             }
           },
           {
@@ -114,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "生活/“安全动力型”人格如何激发学习动力？.md",
+                "file": "技术文章/浏览器工作原理/事件循环.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "“安全动力型”人格如何激发学习动力？ 的出链列表"
+              "title": "事件循环 的出链列表"
             }
           },
           {
@@ -143,25 +142,24 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "-1-临时/✅TODO.md",
+                "file": "技术文章/浏览器工作原理/事件循环.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "✅TODO 的大纲"
+              "title": "事件循环 的大纲"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       },
       {
-        "id": "450b10245e3ba1cb",
+        "id": "54bafa901a854a15",
         "type": "tabs",
-        "dimension": 41.24015748031496,
         "children": [
           {
-            "id": "034a4ecb25f0c525",
+            "id": "cd08d7a7ae8b2667",
             "type": "leaf",
             "state": {
               "type": "git-view",
@@ -174,7 +172,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 253.5
+    "width": 357.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -187,8 +185,19 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "01dd955702b4e147",
+  "active": "324309459f3890f7",
   "lastOpenFiles": [
+    "技术文章/浏览器工作原理/浏览器的多进程，页面渲染流程.md",
+    "技术文章/浏览器工作原理/index.md",
+    "技术文章/浏览器工作原理/已归档/06-渲染流程（下）：HTML、CSS和JavaScript，是如何变成页面的？.md",
+    "技术文章/浏览器工作原理/JavaScript执行机制.md",
+    "技术文章/浏览器工作原理/V8工作原理.md",
+    "技术文章/浏览器工作原理/事件循环.md",
+    "技术文章/浏览器工作原理/学什么？.md",
+    "-1-临时/✅TODO.md",
+    "生活/男生保养秘籍.md",
+    "生活/健身打卡.md",
+    "生活/“安全动力型”人格如何激发学习动力？.md",
     "前端工程化-核心竞争力/index.md",
     "前端工程化-核心竞争力/images/Pasted image 20250220145517.png",
     "前端工程化-核心竞争力/cicd/CICD从入门到实践.md",
@@ -215,20 +224,9 @@
     "技术文章/性能优化/images",
     "技术文章/性能优化/关于requestAnimationFrame的理解.md",
     "技术文章/性能优化/chrome-devtools-performance.md",
-    "技术文章/性能优化/BlueLink项目打包体积优化.md",
     "技术文章/性能优化",
-    "技术文章/玩转vue3全家桶/temp.md",
-    "技术文章/玩转vue3全家桶/index.md",
     "技术文章/玩转vue3全家桶/images",
     "技术文章/玩转vue3全家桶",
-    "技术文章/浏览器工作原理/已归档/21-Chrome开发者工具：利用网络面板做性能分析.md",
-    "技术文章/浏览器工作原理/已归档/20-async↗await：使用同步的方式去写异步代码.md",
-    "技术文章/浏览器工作原理/已归档/19-Promise：使用Promise，告别回调函数.md",
-    "技术文章/浏览器工作原理/已归档/18-宏任务和微任务：不是所有任务都是一个待遇.md",
-    "技术文章/浏览器工作原理/已归档/17-WebAPI：XMLHttpRequest是怎么实现的？.md",
-    "技术文章/浏览器工作原理/已归档/16-WebAPI：setTimeout是如何实现的？.md",
-    "技术文章/浏览器工作原理/已归档/15-消息队列和事件循环：页面是怎么“活”起来的？.md",
-    "技术文章/浏览器工作原理/已归档/14-编译器和解释器：V8是如何执行一段JavaScript代码的？.md",
     "技术文章/浏览器工作原理/已归档",
     "技术文章/浏览器工作原理/images",
     "技术文章/浏览器工作原理",
