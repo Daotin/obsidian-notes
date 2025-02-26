@@ -36,7 +36,9 @@ const members = [
 
 ![](images/Pasted%20image%2020250220145517.png)
 
-
+> [!important]
+> 如果不知道前端工程化可以优化的地方？可以问AI，然后让AI基于项目扫描！
+> 
 
 
 
