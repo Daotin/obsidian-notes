@@ -2,7 +2,7 @@
 | ---------- | ------------------------------------ | ------------------------------- | --------------------------------- |
 | 初始化项目      | `npm init`                           | `yarn init`                     | `pnpm init`                       |
 | **安装所有依赖** | `npm install`                        | `yarn`                          | `pnpm install`                    |
-| **安装指定包**  | `npm install <package>`              | `yarn add <package>`            | `pnpm add <package>`              |
+| 安装指定包      | `npm install <package>`              | `yarn add <package>`            | `pnpm add <package>`              |
 | 安装开发依赖     | `npm install <package> --save-dev`   | `yarn add <package> --dev`      | `pnpm add <package> --save-dev`   |
 | 全局安装包      | `npm install -g <package>`           | `yarn global add <package>`     | `pnpm add -g <package>`           |
 | 卸载包        | `npm uninstall <package>`            | `yarn remove <package>`         | `pnpm remove <package>`           |
