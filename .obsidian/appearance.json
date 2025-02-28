@@ -1,8 +1,11 @@
 {
-  "cssTheme": "Primary",
-  "textFontFamily": "",
+  "cssTheme": "AnuPpuccin",
+  "textFontFamily": "HarmonyOS Sans SC",
   "monospaceFontFamily": "",
-  "theme": "obsidian",
+  "theme": "system",
   "baseFontSize": 16,
-  "accentColor": ""
+  "accentColor": "",
+  "enabledCssSnippets": [
+    "my"
+  ]
 }

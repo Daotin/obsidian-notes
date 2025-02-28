@@ -13,3 +13,6 @@ https://github.com/Nikitosshow/cursor-help
 
 4.重新登录cursor,用删除后的账号继续
 
+---
+
+搜索：cursor 账号共享工具
