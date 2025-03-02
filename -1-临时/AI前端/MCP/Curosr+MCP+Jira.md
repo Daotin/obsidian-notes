@@ -1,0 +1,1 @@
+愿景：通过自己开发的Jira MCP，连接到自己公司的Jira服务器，自动获取bug，自动修复，自动run dev验证，自动commit。
