@@ -16,8 +16,6 @@
 > ```js
 > console.log(111)
 > ```
-```
-```
 
 默认共支持**12种**类别 （可自己在 **Admonitions插件** 里添加）
 
@@ -56,3 +54,18 @@
 ## 参考教程
 
 https://publish.obsidian.md/csj-obsidian/0+-+Obsidian/Markdown/Markdown%E8%B6%85%E7%BA%A7%E6%95%99%E7%A8%8B+Obsidian%E7%89%88
+
+
+
+```Mermaid
+flowchart TD
+    A[屏幕截图] --> VLM[VLM]
+    B[用户输入] --> VLM
+    
+    VLM --> D{任务是否已完成}
+    
+    D -->|N| E[调用对应工具]
+    E --> A
+    
+    D -->|Y| F[返回用户]
+```

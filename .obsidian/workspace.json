@@ -50,77 +50,21 @@
             }
           },
           {
-            "id": "8e8167cabc8fe464",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "技术文章/性能优化/index.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "index"
-            }
-          },
-          {
-            "id": "cea44342cd117647",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "前端工程化-核心竞争力/vue3-template/6-git提交规范.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "6-git提交规范"
-            }
-          },
-          {
-            "id": "182c2292253946a1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "技术文章/CSS token 和 CSS 变量.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "CSS token 和 CSS 变量"
-            }
-          },
-          {
             "id": "8608b5702bd3cb11",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "工作/0业务相关/whty/开发项目/重庆通卡/vpn+服务器.md",
+                "file": "前端工程化-核心竞争力/vue3-template/5-代码规范.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "vpn+服务器"
-            }
-          },
-          {
-            "id": "e86f0dbf43655d50",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Obsidian使用技巧.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Obsidian使用技巧"
+              "title": "5-代码规范"
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -152,10 +96,10 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "project rules",
                 "matchingCase": false,
                 "explainSearch": false,
-                "collapseAll": false,
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
               },
@@ -241,13 +185,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "工作/0业务相关/whty/开发项目/重庆通卡/vpn+服务器.md",
+                "file": "前端工程化-核心竞争力/vue3-template/5-代码规范.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "vpn+服务器 的大纲"
+              "title": "5-代码规范 的大纲"
             }
           }
         ],
@@ -286,12 +230,25 @@
   },
   "active": "8608b5702bd3cb11",
   "lastOpenFiles": [
+    "前端工程化-核心竞争力/vue3-template/images/Pasted image 20250305154724.png",
+    "前端工程化-核心竞争力/vue3-template/images/Pasted image 20250305153603.png",
+    "前端工程化-核心竞争力/vue3-template/9-配置vue-router.md",
     "技术文章/CSS token 和 CSS 变量.md",
+    "工作/团队规范/☢️开发注意清单.md",
+    "技术文章/性能优化/index.md",
+    "-1-临时/AI前端/Cursor科普/project rules.md",
+    "-1-临时/AI前端/Cursor科普/一文搞懂cursor.md",
+    "-1-临时/AI前端/Cursor科普/APP 交互方法说明文档.md",
+    "-1-临时/AI前端/Cursor科普/111.md",
+    "-1-临时/AI前端/Cursor科普/其他资料.md",
+    "技术文章/TypeScript通关秘籍/TypeScript 学习笔记.md",
+    "前端工程化-核心竞争力/vue3-cli/从零开始构建脚手架.md",
+    "工作/0业务相关/whty/开发项目/重庆通卡/vpn+服务器.md",
+    "Obsidian使用技巧.md",
     "-1-临时/AI前端/MCP/MCP Server.md",
     "-1-临时/AI前端/Cursor科普/Cursor无限续杯.md",
     "-1-临时/AI前端/AI赋能前端研发从0～1.md",
     "-1-临时/AI前端/Cursor科普/MCP Server.md",
-    "-1-临时/AI前端/Cursor科普/一文搞懂cursor.md",
     "-1-临时/AI前端/Cursor科普",
     "技术文章/images/Pasted image 20250228135507.png",
     "技术文章/images/Pasted image 20250228135453.png",
@@ -301,20 +258,8 @@
     "工作/0业务相关/whty/开发项目/重庆通卡/人员.md",
     "前端工程化-核心竞争力/vue3-template/6-git提交规范.md",
     "前端工程化-核心竞争力/vue3-template/5-代码规范.md",
-    "技术文章/性能优化/index.md",
     "技术文章/性能优化/BlueLink项目打包体积优化.md",
     "技术文章/性能优化/前端性能优化.md",
-    "前端工程化-核心竞争力/vue3-template/4-vite 工程化配置.md",
-    "工作/团队规范/✅前端开发流程SOP.md",
-    "工作/团队规范/如何杜绝一句话需求？.md",
-    "工作/团队规范/前端业务UI规范.md",
-    "工作/团队规范/前端铁律十条.md",
-    "工作/团队规范/开发一个功能界面，建议按以下顺序.md",
-    "工作/团队规范/☢️开发注意清单.md",
-    "工作/团队规范/新项目开发流程.md",
-    "前端工程化-核心竞争力/vue3-template/1.1-依赖安装工具限制.md",
-    "前端工程化-核心竞争力/vue3-template/storage封装.md",
-    "前端工程化-核心竞争力/vue3-template/3.1-项目文件夹命名.md",
     "-1-临时/images/Pasted image 20250225165857.png",
     "-1-临时/images",
     "前端工程化-核心竞争力/images/Pasted image 20250220145517.png",
@@ -323,7 +268,6 @@
     "技术文章/性能优化/images/img-20240505170593.png",
     "技术文章/性能优化/images/img-20240505170586.png",
     "技术文章/性能优化/images/img-20240505150595.png",
-    "技术文章/性能优化/images/img-20240505150592.png",
     "技术文章/性能优化/images",
     "技术文章/性能优化",
     "技术文章/玩转vue3全家桶/images",

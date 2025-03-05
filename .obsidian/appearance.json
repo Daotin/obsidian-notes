@@ -1,11 +1,13 @@
 {
-  "cssTheme": "Obsidian Nord",
-  "textFontFamily": "HarmonyOS Sans SC",
+  "cssTheme": "Reverie",
+  "textFontFamily": "等线",
   "monospaceFontFamily": "",
   "theme": "system",
   "baseFontSize": 16,
   "accentColor": "",
   "enabledCssSnippets": [
     "my"
-  ]
+  ],
+  "baseFontSizeAction": false,
+  "interfaceFontFamily": "等线"
 }
