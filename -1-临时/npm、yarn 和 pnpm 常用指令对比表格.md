@@ -5,7 +5,7 @@
 | 安装指定包      | `npm install <package>`              | `yarn add <package>`            | `pnpm add <package>`              |
 | 安装开发依赖     | `npm install <package> --save-dev`   | `yarn add <package> --dev`      | `pnpm add <package> --save-dev`   |
 | 全局安装包      | `npm install -g <package>`           | `yarn global add <package>`     | `pnpm add -g <package>`           |
-| 卸载包        | `npm uninstall <package>`            | `yarn remove <package>`         | `pnpm remove <package>`           |
+| **卸载包**    | `npm uninstall <package>`            | `yarn remove <package>`         | `pnpm remove <package>`           |
 | 更新包        | `npm update <package>`               | `yarn upgrade <package>`        | `pnpm update <package>`           |
 | 查看过时的包     | `npm outdated`                       | `yarn outdated`                 | `pnpm outdated`                   |
 | **运行脚本**   | `npm run <script>`                   | `yarn <script>`                 | `pnpm run <script>`               |

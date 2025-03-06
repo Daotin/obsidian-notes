@@ -1,6 +1,6 @@
 {
   "cssTheme": "Reverie",
-  "textFontFamily": "等线",
+  "textFontFamily": "",
   "monospaceFontFamily": "",
   "theme": "system",
   "baseFontSize": 16,
@@ -9,5 +9,5 @@
     "my"
   ],
   "baseFontSizeAction": false,
-  "interfaceFontFamily": "等线"
+  "interfaceFontFamily": ""
 }
