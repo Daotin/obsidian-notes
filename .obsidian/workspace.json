@@ -13,12 +13,40 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "-1-临时/AI前端/MCP/MCP Server.md",
+                "file": "前端工程化-核心竞争力/vue3-template/7- 引入ElementPlus组件库.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "MCP Server"
+              "title": "7- 引入ElementPlus组件库"
+            }
+          },
+          {
+            "id": "a41d0c3081d3cc6b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "-1-临时/AI前端/Cursor科普/其他资料.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "其他资料"
+            }
+          },
+          {
+            "id": "ceceb2570d6c75bf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "-1-临时/AI前端/Cursor科普/一文搞懂cursor.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "一文搞懂cursor"
             }
           },
           {
@@ -35,8 +63,7 @@
               "title": "5-代码规范"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -68,10 +95,10 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "project rules",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
-                "collapseAll": true,
+                "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
               },
@@ -157,13 +184,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "前端工程化-核心竞争力/vue3-template/5-代码规范.md",
+                "file": "前端工程化-核心竞争力/vue3-template/7- 引入ElementPlus组件库.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "5-代码规范 的大纲"
+              "title": "7- 引入ElementPlus组件库 的大纲"
             }
           }
         ],
@@ -200,10 +227,19 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e689b0f2e6dc4fb1",
+  "active": "b6178fd09c85b1a8",
   "lastOpenFiles": [
-    "-1-临时/AI前端/MCP/MCP Server.md",
+    "前端工程化-核心竞争力/vue3-template/12-配置mock.md",
+    "-1-临时/AI前端/🚀我的每日AI实践.md",
+    "-1-临时/AI前端/AI加持的前端开发流程.md",
+    "-1-临时/AI前端/Cursor科普/一文搞懂cursor.md",
+    "-1-临时/AI前端/Cursor科普/其他资料.md",
+    "-1-临时/AI前端/images/Pasted image 20250309103843.png",
+    "-1-临时/AI前端/images",
+    "前端工程化-核心竞争力/vue3-template/6-代码提交规范.md",
     "前端工程化-核心竞争力/vue3-template/5-代码规范.md",
+    "-1-临时/AI前端/MCP/MCP Server.md",
+    "技术文章/ESLint+Prettier.md",
     "工作/团队规范/☢️开发注意清单.md",
     "前端工程化-核心竞争力/vue3-template/images/Pasted image 20250305154724.png",
     "前端工程化-核心竞争力/vue3-template/images/Pasted image 20250305153603.png",
@@ -211,10 +247,8 @@
     "技术文章/CSS token 和 CSS 变量.md",
     "技术文章/性能优化/index.md",
     "-1-临时/AI前端/Cursor科普/project rules.md",
-    "-1-临时/AI前端/Cursor科普/一文搞懂cursor.md",
     "-1-临时/AI前端/Cursor科普/APP 交互方法说明文档.md",
     "-1-临时/AI前端/Cursor科普/111.md",
-    "-1-临时/AI前端/Cursor科普/其他资料.md",
     "技术文章/TypeScript通关秘籍/TypeScript 学习笔记.md",
     "前端工程化-核心竞争力/vue3-cli/从零开始构建脚手架.md",
     "工作/0业务相关/whty/开发项目/重庆通卡/vpn+服务器.md",
@@ -228,17 +262,12 @@
     "-1-临时/✅TODO.md",
     "-1-临时/AI前端/未命名.md",
     "工作/0业务相关/whty/开发项目/重庆通卡/2期-乘车码H5.md",
-    "工作/0业务相关/whty/开发项目/重庆通卡/人员.md",
-    "前端工程化-核心竞争力/vue3-template/6-git提交规范.md",
-    "技术文章/性能优化/BlueLink项目打包体积优化.md",
-    "技术文章/性能优化/前端性能优化.md",
     "-1-临时/images/Pasted image 20250225165857.png",
     "-1-临时/images",
     "前端工程化-核心竞争力/images/Pasted image 20250220145517.png",
     "技术文章/性能优化/images/vFeP7iWDjB.png",
     "技术文章/性能优化/images/NOX_nx-nVccubS.png",
     "技术文章/性能优化/images/img-20240505170593.png",
-    "技术文章/性能优化/images/img-20240505170586.png",
     "技术文章/性能优化/images",
     "技术文章/性能优化",
     "技术文章/玩转vue3全家桶/images",
@@ -246,7 +275,6 @@
     "技术文章/浏览器工作原理/已归档",
     "技术文章/浏览器工作原理/images",
     "技术文章/浏览器工作原理",
-    "技术文章/webpack通关秘籍/file/全量配置模板/webpack.config3.js",
     "未命名.canvas"
   ]
 }

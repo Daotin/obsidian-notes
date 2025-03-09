@@ -1,5 +1,3 @@
-# 配置 mock
-
 ## 配置步骤
 
 1、安装依赖
@@ -100,9 +98,30 @@ import "./mocks";
 - `index.ts`：引入 mock 和其他模块的 mock
 - `common.ts`：可以放一些登录，注册，获取用户信息等的 mock
 
-## 工具推荐
+## 其他工具推荐
 
-[just mock](https://just-mock.vercel.app/) 是一个浏览器插件，在代码中什么都不需要更改，只需要添加相应的接口和数据即可实现拦截。
+1、使用[vite-plugin-mock](https://github.com/vbenjs/vite-plugin-mock)代替Mockjs
+
+vite-plugin-mock是专为Vite设计的mock插件，主要特点：
+
+1. 与Vite完全集成，利用Vite的开发服务器
+2. 支持开发和生产环境的配置分离
+3. 基于connect中间件实现，不修改请求路径
+4. 内部实际上也使用了MockJS的数据模板功能
+5. 支持热更新
+
+与Mockjs的区别如下：
+- 集成方式：MockJS需要手动引入和配置，vite-plugin-mock作为Vite插件直接集成
+- 实现原理：MockJS通过重写XMLHttpRequest来拦截请求，vite-plugin-mock利用Vite开发服务器中间件
+- 使用场景：MockJS可用于任何前端项目，vite-plugin-mock专为Vite项目设计
+- 热更新支持：vite-plugin-mock支持热更新，修改mock文件后自动生效
+- 开发生产环境分离：vite-plugin-mock提供了更好的环境隔离机制
+
+**最大的区别可能就是，mockjs的请求，不会再Network中显示，但是vite-plugin-mock会显示（基于connect中间件实现），可能更方便调试。但是需要额外安装一个依赖。**
+
+因此，没必要使用vite-plugin-mock。
+
+2、[just mock](https://just-mock.vercel.app/) 是一个浏览器插件，在代码中什么都不需要更改，只需要添加相应的接口和数据即可实现拦截。
 
 插件安装好后添加相应的域名就可以拦截到相应的请求。接着进行相应的编辑添加对应的 mock 数据就好。
 
