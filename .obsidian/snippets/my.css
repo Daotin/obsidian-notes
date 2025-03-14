@@ -1,15 +1,27 @@
 .markdown-preview-view.is-readable-line-width .markdown-preview-sizer {
-	max-width: 100%;
+  max-width: 100%;
 }
 
 .markdown-source-view.mod-cm6.is-readable-line-width .cm-sizer {
-	max-width: 100%;
+  max-width: 100%;
 }
 
 .markdown-source-view.mod-cm6.is-readable-line-width .cm-content {
-	max-width: 100%;
+  max-width: 100%;
 }
 
 .markdown-source-view.mod-cm6.is-readable-line-width .cm-line {
-	max-width: 100%;
+  max-width: 100%;
+}
+
+.nav-folder .nav-folder-title-content:before {
+  content: '\1F4C2';
+}
+
+.nav-folder.is-collapsed .nav-folder-title-content:before {
+  content: '\1F4C1';
+}
+
+.nav-file-title-content:before {
+  content: '\1F5D2';
 }
