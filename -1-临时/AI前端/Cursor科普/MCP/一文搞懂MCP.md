@@ -1,3 +1,22 @@
+## MCP是什么
+
+MCP（Model Context Protocol）是 Anthropic 在去年提出的一种开放协议，用于标准化应用程序与大语言模型（LLMs）之间的上下文交互，它在外部数据源和 AI 工具之间建立链接，实现了类似 AI 应用的'USB-C'通用接口。
+
+简单来说借助 MCP 可以用来给 AI 使用插件，来帮助 AI 能够看见、理解其他数据源，典型的应用场景比如在 Windsurf 和 Cursor 里，通过各种 MCP 工具连接到其他的服务，来完成一些 AI 本身无法实现的功能。
+
+比如连接文本生成图像的 MCP，在 Curosr 中，让其[将 emoji 替换成图片](https://www.youtube.com/watch?v=oAoigBWLZgE)：
+
+![alt text](images/image-20250302101206.png)
+
+比如，根据外部的编码规范，[自动格式化代码](https://www.youtube.com/watch?v=oAoigBWLZgE)：
+
+![alt text](images/image-20250302103346.png)
+
+### MCP图解
+
+![600](images/Pasted%20image%2020250314161233.png)
+
+## MCP的核心
 
 1. MCP 的核心价值
 
@@ -40,26 +59,251 @@ Data Source：本地（如文件系统）或远程（如 Slack 频道）数据�
 
 
 
-
-MCP图解：
-
-![600](images/Pasted%20image%2020250314161233.png)
-
-
-
-
-## usage
+## 快速上手
 
 > 使用AI辅助：仔细完整阅读下面链接和提供的llms-full文件，出一个一步步引导学习教程，让我学会如何写一个MCP server，包括command模式和sse模式。使用node+npm+typescrpt技术栈：[https://modelcontextprotocol.io/introduction](https://modelcontextprotocol.io/introduction)
 
 
-- https://x.com/vista8/status/1898009979350925632
+
 - https://modelcontextprotocol.io/llms-full.txt
 - https://modelcontextprotocol.io/introduction
 
-- https://mp.weixin.qq.com/s/y4f-TiK7kOe_vK2sh7It8A
-- https://guangzhengli.com/blog/zh/model-context-protocol/
-- https://x.com/punk2898/status/1899832345567597029
-- https://www.youtube.com/playlist?list=PL8ZIecHfGQv5o7Y3ltmywfc-jOv-9N4Ap
-- 
-- https://mp.weixin.qq.com/s/djpkRnxV4btwEHTWN8Jy4g
+
+
+### 创建一个command MCP
+
+> 示例是一个计算器，提供2个工具，一个是calculate计算基本的加减乘除，一个是evaluate，使用js的eval直接计算复杂的表达式。
+
+```ts
+import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
+import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
+import { z } from "zod";
+
+// 创建MCP服务器
+const server = new McpServer({
+  name: "Calculator",
+  version: "1.0.0",
+});
+
+// 基础运算工具
+server.tool(
+  "calculate",
+  {
+    a: z.number(),
+    b: z.number(),
+    operator: z.enum(["+", "-", "*", "/"]),
+  },
+  async ({ a, b, operator }) => {
+    let result: number;
+    switch (operator) {
+      case "+":
+        result = a + b;
+        break;
+      case "-":
+        result = a - b;
+        break;
+      case "*":
+        result = a * b;
+        break;
+      case "/":
+        if (b === 0) {
+          return {
+            content: [{ type: "text", text: "Error: Division by zero" }],
+            isError: true,
+          };
+        }
+        result = a / b;
+        break;
+      default:
+        return {
+          content: [{ type: "text", text: "Error: Invalid operator" }],
+          isError: true,
+        };
+    }
+    return {
+      content: [{ type: "text", text: String(result) }],
+    };
+  }
+);
+
+// 复杂表达式计算工具
+server.tool(
+  "evaluate",
+  {
+    expression: z
+      .string()
+      .refine(
+        (expr) => /^[\d\s+\-*/().]+$/.test(expr),
+        "Expression can only contain numbers, operators (+, -, *, /) and parentheses"
+      ),
+  },
+  async ({ expression }) => {
+    try {
+      // 安全检查:只允许数字、运算符和括号
+      if (!/^[\d\s+\-*/().]+$/.test(expression)) {
+        throw new Error("Invalid characters in expression");
+      }
+
+      // 计算表达式
+      const result = eval(expression);
+
+      // 检查结果是否为有效数字
+      if (typeof result !== "number" || isNaN(result) || !isFinite(result)) {
+        throw new Error("Invalid result");
+      }
+
+      return {
+        content: [{ type: "text", text: String(result) }],
+      };
+    } catch (error) {
+      return {
+        content: [
+          {
+            type: "text",
+            text: `Error: ${
+              error instanceof Error ? error.message : "Invalid expression"
+            }`,
+          },
+        ],
+        isError: true,
+      };
+    }
+  }
+);
+
+// 启动服务器
+// 开始在Stdin上接收消息，并在Stdout上发送消息
+const transport = new StdioServerTransport();
+await server.connect(transport);
+
+```
+
+然后通过tsc编译到build：
+```json
+{
+  "type": "module",
+  "scripts": {
+    "build": "tsc"
+  },
+}
+
+```
+
+如何测试？
+可以使用 [MCP Inspector](https://github.com/modelcontextprotocol/inspector) 测试：
+```bash
+npx @modelcontextprotocol/inspector node build/calc.js
+```
+
+![700](images/Pasted%20image%2020250314205348.png)
+
+
+添加到Cursor中使用：
+![400](images/Pasted%20image%2020250314202712.png)
+
+测试：
+![500](images/Pasted%20image%2020250314202652.png)
+### SSE MCP
+
+```js
+import express from "express";
+import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
+import { SSEServerTransport } from "@modelcontextprotocol/sdk/server/sse.js";
+import { z } from "zod";
+
+// 创建一个 Express 应用
+const app = express();
+const PORT = 3000;
+
+// 创建一个 MCP 服务器
+const server = new McpServer({
+  name: "calc-mcp",
+  version: "1.0.0",
+});
+
+// 定义一个复杂的计算器工具
+server.tool(
+  "calculator",
+  {
+    expression: z.string().min(1), // 确保输入的表达式不为空
+  },
+  async ({ expression }) => {
+    try {
+      // 使用 eval 计算表达式
+      const result = eval(expression);
+      return {
+        content: [
+          {
+            type: "text",
+            text: `The result of the expression "${expression}" is ${result}`,
+          },
+        ],
+      };
+    } catch (error) {
+      return {
+        content: [
+          {
+            type: "text",
+            text: `Error: Invalid expression "${expression}"`,
+          },
+        ],
+        isError: true,
+      };
+    }
+  }
+);
+
+// 存储传输对象
+let transport: SSEServerTransport;
+
+// 设置 SSE 传输
+app.get("/sse", async (req, res) => {
+  transport = new SSEServerTransport("/messages", res);
+  await server.connect(transport);
+});
+
+app.post("/messages", async (req, res) => {
+  // 这里需要处理来自客户端的消息
+  // 注意：在实际应用中，你可能需要根据客户端的请求来路由消息到对应的传输
+  await transport.handlePostMessage(req, res);
+});
+
+// 启动服务器
+app.listen(PORT, () => {
+  console.log(`calc-mcp server is running on http://localhost:${PORT}`);
+});
+
+```
+
+然后需要在控制台启动：
+```
+D:\Gitee\mcp-demo>node build/calc-sse.js
+calc-mcp server is running on http://localhost:3000
+
+```
+
+才能加入到Cursor的MCP Server。
+
+
+### 完整通信流程
+
+在MCP架构下的SSE通信流程是：
+
+- 客户端通过GET /sse请求建立SSE连接
+- 服务器创建SSEServerTransport实例并与MCP服务器建立连接
+- 客户端需要调用工具时（如使用calculator），发送MCP格式的消息到POST /messages
+- handlePostMessage处理这个POST请求并转发给MCP服务器
+- MCP服务器内部路由到对应的工具处理函数（如calculator的处理函数）
+- 处理结果通过SSE连接异步推送回客户端，而不是在POST响应中直接返回
+
+> SSEServerTransport的handlePostMessage方法实际上是一个桥接器，它接收HTTP POST请求并将其转换为MCP内部消息，然后发送给MCP服务器处理。同时，它也负责将MCP服务器的响应通过之前建立的SSE连接发送回客户端。
+
+这是一个典型的通过HTTP和SSE实现MCP协议的方式。客户端与服务器之间保持长连接（通过SSE），而客户端的请求则通过标准HTTP POST发送。
+
+
+## MCP Server：
+
+- https://glama.ai/mcp/servers
+- https://smithery.ai/
+- 官方的 MCP Server 列表：https://github.com/modelcontextprotocol/servers
+- https://mcp.composio.dev/
