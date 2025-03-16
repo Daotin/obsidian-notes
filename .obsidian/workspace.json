@@ -172,7 +172,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 240.5
+    "width": 291.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -185,7 +185,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "7ed40f7b9d63dcc1",
+  "active": "cd08d7a7ae8b2667",
   "lastOpenFiles": [
     "前端工程化-核心竞争力/vue3-template/5-代码规范.md",
     "-1-临时/AI前端/Cursor科普/一文搞懂cursor.md",

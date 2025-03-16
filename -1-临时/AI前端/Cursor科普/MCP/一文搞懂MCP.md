@@ -307,6 +307,7 @@ calc-mcp server is running on http://localhost:3000
 - https://smithery.ai/
 - 官方的 MCP Server 列表：https://github.com/modelcontextprotocol/servers
 - https://mcp.composio.dev/
+- https://mcp.so/
 
 
 以下是官方推荐的 Model Context Protocol (MCP) 服务器列表：
