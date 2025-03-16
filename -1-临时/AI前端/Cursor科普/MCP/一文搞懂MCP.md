@@ -301,9 +301,32 @@ calc-mcp server is running on http://localhost:3000
 这是一个典型的通过HTTP和SSE实现MCP协议的方式。客户端与服务器之间保持长连接（通过SSE），而客户端的请求则通过标准HTTP POST发送。
 
 
-## MCP Server：
+## MCP Server
 
 - https://glama.ai/mcp/servers
 - https://smithery.ai/
 - 官方的 MCP Server 列表：https://github.com/modelcontextprotocol/servers
 - https://mcp.composio.dev/
+
+
+以下是官方推荐的 Model Context Protocol (MCP) 服务器列表：
+
+| 分类              | 服务器名称               | 描述                                   |
+| --------------- | ------------------- | ------------------------------------ |
+| **数据和文件系统**     | 文件系统                | 具有可配置访问控制的安全文件操作                     |
+|                 | PostgreSQL          | 具有模式检查功能的只读数据库访问                     |
+|                 | SQLite              | 数据库交互和商业智能功能                         |
+|                 | Google Drive        | 提供对 Google Drive 的文件访问和搜索功能          |
+| **开发工具**        | Git                 | 读取、搜索和操作 Git 仓库的工具                   |
+|                 | GitHub              | 集成 GitHub API，用于仓库管理、文件操作等           |
+|                 | GitLab              | 集成 GitLab API，支持项目管理                 |
+|                 | Sentry              | 从 Sentry.io 检索和分析问题                  |
+| **Web 和浏览器自动化** | Brave Search        | 使用 Brave 的搜索 API 进行 Web 和本地搜索        |
+|                 | Fetch               | 为 LLM 优化的 Web 内容获取和转换                |
+|                 | Puppeteer           | 提供浏览器自动化和 Web 抓取功能                   |
+| **生产力和通信**      | Slack               | 提供频道管理和消息功能                          |
+|                 | Google Maps         | 提供位置服务、路线和地点详情                       |
+|                 | Memory              | 基于知识图谱的持久记忆系统                        |
+| **AI 和专用工具**    | EverArt             | 使用各种模型进行 AI 图像生成                     |
+|                 | Sequential Thinking | 通过思维序列进行动态问题解决                       |
+|                 | AWS KB Retrieval    | 使用 Bedrock Agent Runtime 从 AWS 知识库检索 |
