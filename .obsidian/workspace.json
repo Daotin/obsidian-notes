@@ -8,20 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "211d1752f3456614",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "前端工程化-核心竞争力/vue3-template/5-代码规范.md",
-                "mode": "preview",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "5-代码规范"
-            }
-          },
-          {
             "id": "b18d4bd31254bb38",
             "type": "leaf",
             "state": {
@@ -36,59 +22,31 @@
             }
           },
           {
-            "id": "b377d6875a5770c7",
+            "id": "5cef6d6b5ccf718c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "-1-临时/AI前端/几个cursor维护开发大型项目的小技巧.md",
+                "file": "工作/0业务相关/whty/开发项目/重庆通卡/2期-乘车码H5.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "几个cursor维护开发大型项目的小技巧"
+              "title": "2期-乘车码H5"
             }
           },
           {
-            "id": "5c2ccfa567791dc0",
+            "id": "e51f99c9d5d121d2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "-1-临时/AI前端/Cursor科普/MCP/MCP Server.md",
+                "file": "-1-临时/AI前端/Cursor科普/cursor推进.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "MCP Server"
-            }
-          },
-          {
-            "id": "84d1d3c4b0c23ab9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "-1-临时/AI前端/Cursor科普/project rules.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "project rules"
-            }
-          },
-          {
-            "id": "00255d14a84a6f91",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "工作/团队规范/前端业务UI规范.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "前端业务UI规范"
+              "title": "cursor推进"
             }
           },
           {
@@ -227,13 +185,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "-1-临时/AI前端/几个cursor维护开发大型项目的小技巧.md",
+                "file": "-1-临时/AI前端/Cursor科普/cursor推进.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "几个cursor维护开发大型项目的小技巧 的大纲"
+              "title": "cursor推进 的大纲"
             }
           }
         ],
@@ -270,54 +228,54 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b377d6875a5770c7",
+  "active": "e51f99c9d5d121d2",
   "lastOpenFiles": [
+    "前端工程化-核心竞争力/vue3-template/vue3-utils/storage封装.md",
+    "-1-临时/AI前端/Cursor科普/cursor推进.md",
+    "前端工程化-核心竞争力/vue3-template/vue3-utils/use函数库-todo.md",
+    "前端工程化-核心竞争力/vue3-template/vue3-utils",
+    "前端工程化-核心竞争力/vue3-template/vue3-component/svg预览组件.md",
+    "前端工程化-核心竞争力/vue3-template/vue3 svg预览组件.md",
+    "前端工程化-核心竞争力/vue3-template/vue3-component/组件封装-todo.md",
+    "技术文章/vue源码学习.md",
+    "技术文章/webpack4优化.md",
+    "技术文章/blog/vue3 KeepAlive原理.md",
+    "技术文章/blog/vue3 hooks思考.md",
+    "技术文章/blog/vue2组件精讲.md",
+    "技术文章/npm.md",
+    "技术文章/blog/vue2 自动注册全局组件.md",
+    "技术文章/vscode二次开发.md",
+    "技术文章/blog/sonarQube简单介绍.md",
+    "技术文章/blog/Git常见问题.md",
+    "技术文章/ESLint+Prettier.md",
+    "技术文章/blog/Electron 的运行原理是什么.md",
+    "技术文章/blog/Echarts配置表.md",
+    "技术文章/blog/CSS token 和 CSS 变量.md",
+    "技术文章/blog/Bit vs npm私有库.md",
+    "技术文章/blog/学习RuoYi-Vue前端框架.md",
+    "技术文章/blog/前端异常监控系统-搭建原理.md",
+    "技术文章/blog/代码抽审和走查.md",
+    "技术文章/blog/搭建前端组件库.md",
+    "技术文章/blog/安装一个依赖失败如何分析？.md",
+    "技术文章/blog/images",
+    "-1-临时/AI前端/Cursor科普/images/Pasted image 20250318112310.png",
+    "-1-临时/AI前端/Cursor科普/images",
+    "-1-临时/AI前端/images/3774a934eb1aa12a29d1b43bbfec5ad0.jpg",
+    "-1-临时/AI前端/images/Pasted image 20250318090421.png",
+    "-1-临时/AI前端/images/Pasted image 20250318085922.png",
     "-1-临时/AI前端/images/Pasted image 20250317172114.png",
-    "-1-临时/AI前端/Claude-svg.md",
-    "-1-临时/AI前端/几个cursor维护开发大型项目的小技巧.md",
-    "-1-临时/日记/2025-03-14.md",
-    "-1-临时/日记/2025-01-20.md",
-    "工作/0业务相关/whty/开发项目/重庆通卡/2期-乘车码H5.md",
     "-1-临时/AI前端/images/Pasted image 20250317123308.png",
     "-1-临时/AI前端/images/Pasted image 20250317121227.png",
     "-1-临时/AI前端/images/Pasted image 20250317121204.png",
-    "-1-临时/AI前端/Cursor科普/MCP/连接后端数据库，做前端 mock.md",
-    "-1-临时/AI前端/Cursor科普/MCP/一文搞懂MCP.md",
     "-1-临时/AI前端/Cursor科普/MCP/images/Pasted image 20250314205348.png",
     "-1-临时/AI前端/Cursor科普/MCP/images/Pasted image 20250314202712.png",
-    "-1-临时/AI前端/Cursor科普/MCP/images/Pasted image 20250314202652.png",
-    "-1-临时/AI前端/Cursor科普/MCP/images/Pasted image 20250314161233.png",
-    "-1-临时/AI前端/Cursor科普/一文搞懂cursor.md",
-    "-1-临时/AI前端/Cursor科普/111.md",
-    "-1-临时/AI前端/Cursor科普/MCP/MCP Server.md",
-    "-1-临时/✅TODO.md",
-    "工作/0业务相关/whty/开发项目/重庆通卡/vpn+服务器.md",
-    "-1-临时/AI前端/v0.dev+cursor工作流.md",
-    "前端工程化-核心竞争力/vue3-template/16.1-权限控制（全）.md",
-    "工作/0业务相关/whty/开发项目/重庆通卡/渝通行APP二期需求.md",
-    "工作/0业务相关/whty/开发项目/重庆通卡/人员.md",
-    "工作/团队规范/前端业务UI规范.md",
-    "-1-临时/AI前端/Cursor科普/MCP/用mcp接入监控平台.md",
-    "-1-临时/AI前端/Cursor科普/MCP/用mcp 和cursor实现私有组件库的代码生成.md",
-    "工作/团队规范/✅前端开发流程SOP.md",
-    "-1-临时/AI前端/🚀我的每日AI实践.md",
-    "-1-临时/AI前端/Cursor科普/project rules.md",
-    "技术文章/blog/微信内页跳转 显示“如需浏览，请长按网址复制后使用浏览器访问”怎么解决.md",
     "技术文章/blog",
-    "技术文章/如何绕过“请在微信客户端打开链接”？.md",
-    "技术文章/images/Pasted image 20250311110742.png",
-    "技术文章/images/Pasted image 20250311110613.png",
-    "技术文章/images/Pasted image 20250311110414.png",
-    "前端工程化-核心竞争力/vue3-template/5-代码规范.md",
     "-1-临时/AI前端/images",
     "-1-临时/AI前端/Cursor科普",
     "-1-临时/images",
     "技术文章/性能优化/images",
     "技术文章/性能优化",
     "技术文章/玩转vue3全家桶/images",
-    "技术文章/玩转vue3全家桶",
-    "技术文章/浏览器工作原理/已归档",
-    "技术文章/浏览器工作原理/images",
     "未命名.canvas"
   ]
 }
