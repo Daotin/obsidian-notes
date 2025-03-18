@@ -257,7 +257,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 278.5
+    "width": 452.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -270,7 +270,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "89d58224b5279b73",
+  "active": "cd08d7a7ae8b2667",
   "lastOpenFiles": [
     "技术文章/性能优化/BlueLink项目打包体积优化.md",
     "技术文章/性能优化/前端性能优化.md",
