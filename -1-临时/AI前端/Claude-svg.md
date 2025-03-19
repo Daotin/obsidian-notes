@@ -292,10 +292,10 @@ Format：
 ```
 
 
-### 流程图
+### 流程图1：claude+svg
 ![400](images/3774a934eb1aa12a29d1b43bbfec5ad0.jpg)
 
-```
+```html
 任务: 绘制SVG流程图  
 （先写出流程UML，然后再绘图（SVG））  
 流程：  
@@ -393,4 +393,39 @@ Format：
   <text x="50" y="480" font-family="Source Han Sans CN, sans-serif" font-size="16" fill="#666" text-anchor="start" font-weight="500">• 会议结束后请清理会议室</text>  
   <text x="50" y="510" font-family="Source Han Sans CN, sans-serif" font-size="16" fill="#666" text-anchor="start" font-weight="500">• 如需取消预订请提前通知</text>  
 </svg>
+```
+
+
+### 流程图2：claude+drawio
+
+![](images/Pasted%20image%2020250319144501.png)
+![](images/Pasted%20image%2020250319144516.png)
+
+通过 draw.io 的 vscode 插件，就可以在本地执行。
+
+### PPT
+
+[Claude + Reveal.js，生成交互式网页 PPT](https://mp.weixin.qq.com/s/8pzcRdEawkHN2Doyg3NWPw)
+
+```markdown
+作为精通RevealJS的资深设计师，请基于以下原则创建专业级中文HTML演示，主题是 XXXXX（你需要生成的内容）：  
+  
+**核心要求**  
+- 视觉震撼：运用现代设计语言（极简/渐变/科技感），营造惊艳视觉体验  
+- 信息聚焦：严格遵循"一页一观点"，关键数据突出呈现  
+- 情感共鸣：通过配色/版式/动效传达专业权威感  
+- 极致体验：完美适配各终端  
+  
+**技术规格**  
+- 框架：RevealJS 4.3.1 + Font Awesome 6.4  
+- 字体：Noto Sans SC为主字体，W3C标准HTML结构  
+- 交互：智能运用碎片展示/垂直导航/微过渡动画  
+- 响应式：使用vh/vw单位，关键断点媒体查询  
+  
+**加分项**  
+★ 智能内容补充（案例/数据可视化）  
+★ 非侵入式互动元素  
+★ 精细的材质纹理运用  
+  
+输出：符合W3C标准的单文件HTML，含完整CSS/JS
 ```
