@@ -28,80 +28,14 @@ vite默认的build打包，会把所有的模块单独打包，形成很多1kb�
 	- 对于components组件库和utils工具库，尽量合并处理。
 
 然后还有一些通用的配置：
-- 打包后的contenthash文件名，文件夹分类
+- 打包后的hash文件名，文件夹分类
 - gzip/br压缩（Brotli打包后比gzip体积更小，但是需要Nginx 配置 Brotli 支持，配置 brotli_static on; 并启用 Content-Encoding: br	让浏览器正确解析）
 	- js，css，图片压缩
-- css tree shaking
+- ~~css tree shaking（CSS Tree Shaking 是 Vite 默认支持的，不需要额外配置）~~
 - production 环境不生成 SourceMap
 - 删除生产环境 console.log，debugger
 - ~~动态 polyfill （Vite 默认不会进行 polyfill，如需兼容旧版浏览器，可以使用 `@vitejs/plugin-legacy` 插件或手动引入 `core-js`。）~~
 
-
-
-示例配置：
-```js
-// vite.config.js示例
-export default defineConfig({
-  build: {
-    rollupOptions: {
-      output: {
-        manualChunks(id) {
-          // 大型依赖单独打包
-          if (id.includes('node_modules/vue/')) {
-            return'vue';
-          }
-          if (id.includes('node_modules/element-plus/')) {
-            return 'element-plus';
-          }
-          // 小型依赖合并
-          if (id.includes('node_modules/') && !id.includes('big-lib')) {
-            return 'vendor';
-          }
-          // 业务模块按页面拆分
-          if (id.includes('src/pages/')) {
-            const matchResult = id.match(/src\/pages\/([^/]+)/);
-            if (matchResult) {
-              return `page-${matchResult[1]}`;
-            }
-          }
-          // 组件库合并
-          if (id.includes('src/components/')) {
-            return 'components';
-          }
-          // 工具库合并
-          if (id.includes('src/utils/')) {
-            return 'utils';
-          }
-        },
-        // 使用contenthash确保缓存优化
-        entryFileNames:'js/[name].[hash].js',
-        chunkFileNames:'js/[name].[hash].js',
-        assetFileNames: 'assets/[name].[hash].[ext]'
-      }
-    },
-    // 启用terser压缩
-    minify: 'terser',
-    terserOptions: {
-      compress: {
-        drop_console: true,
-        drop_debugger: true
-      }
-    }
-  },
-  plugins: [
-    // gzip压缩
-    viteCompression({
-      algorithm: 'gzip',
-      threshold: 10240// 大于10kb才压缩
-    }),
-    // 可选：br压缩
-    viteCompression({
-      algorithm: 'brotliCompress',
-      threshold: 10240
-    })
-  ]
-})
-```
 
 ## 构建速度优化
 
