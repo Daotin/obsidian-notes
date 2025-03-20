@@ -350,7 +350,9 @@ module.exports = {
 
 #### 4、动态 polyfill
 
-`babel-preset-env` 是一个智能预设，可以根据目标环境（浏览器或 Node.js）的不同，仅编译需要的语法特性，并引入必要的 polyfills，从而减少最终构建的代码体积，提高运行效率
+> 一般不需要，我们通过在 package.json 中的 browserslist 限制目标浏览器。
+
+`babel-preset-env` 是一个智能预设，可以根据目标环境（浏览器或 Node.js）的不同，仅编译需要的语法特性，并引入必要的 polyfills，从而减少最终构建的代码体积，提高运行效率。
 
 安装：
 

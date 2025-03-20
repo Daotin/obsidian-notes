@@ -8,7 +8,21 @@
         "type": "tabs",
         "children": [
           {
-            "id": "b18d4bd31254bb38",
+            "id": "e51f99c9d5d121d2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "技术文章/webpack通关秘籍/webpack打包速度和体积优化.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "webpack打包速度和体积优化"
+            }
+          },
+          {
+            "id": "79f6ffcc90f8e050",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -19,48 +33,6 @@
               },
               "icon": "lucide-file",
               "title": "Claude-svg"
-            }
-          },
-          {
-            "id": "5cef6d6b5ccf718c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "前端工程化-核心竞争力/vue3-template/vue3-构建打包优化/构建打包优化.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "构建打包优化"
-            }
-          },
-          {
-            "id": "4d2fa88b8e54360e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "前端工程化-核心竞争力/vue3-template/vue3-cli/从零开始构建脚手架.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "从零开始构建脚手架"
-            }
-          },
-          {
-            "id": "e51f99c9d5d121d2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "-1-临时/AI前端/Cursor科普/Cursor和MCP应用场景搭建.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Cursor和MCP应用场景搭建"
             }
           },
           {
@@ -77,8 +49,7 @@
               "title": "vpn+服务器"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -199,13 +170,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "前端工程化-核心竞争力/vue3-template/vue3-cli/从零开始构建脚手架.md",
+                "file": "前端工程化-核心竞争力/vue3-template/vue3-构建打包优化/vite构建打包优化.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "从零开始构建脚手架 的大纲"
+              "title": "vite构建打包优化 的大纲"
             }
           }
         ],
@@ -242,28 +213,82 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4d2fa88b8e54360e",
+  "floating": {
+    "id": "16f7b8f34205e5cd",
+    "type": "floating",
+    "children": [
+      {
+        "id": "5f24c8d0ef971410",
+        "type": "window",
+        "children": [
+          {
+            "id": "481bc30b963ccc3f",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "8046b714c204d644",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "前端工程化-核心竞争力/vue3-template/vue3-构建打包优化/vite构建打包优化.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "vite构建打包优化"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical",
+        "x": -1403,
+        "y": 171,
+        "width": 1024,
+        "height": 800,
+        "maximize": false,
+        "zoom": 0
+      }
+    ]
+  },
+  "active": "8046b714c204d644",
   "lastOpenFiles": [
-    "前端工程化-核心竞争力/vue3-template/vue3-构建打包优化/构建打包优化.md",
+    "技术文章/webpack通关秘籍/webpack打包速度和体积优化.md",
+    "前端工程化-核心竞争力/vue3-template/vue3-构建打包优化/vite构建打包优化.md",
+    "前端工程化-核心竞争力/vue3-template/vue3-构建打包优化/vue-cli4和5构建打包优化.md",
+    "前端工程化-核心竞争力/vue3-template/vue3-构建打包优化/images/Pasted image 20250320162651.png",
+    "工作/0业务相关/whty/🔒whty账号.md",
+    "-1-临时/AI前端/Claude-svg.md",
+    "技术文章/webpack通关秘籍/webpack原生常用配置.md",
+    "技术文章/webpack4优化.md",
+    "技术文章/webpack通关秘籍/webpack构建原理.md",
+    "技术文章/webpack通关秘籍/学什么.md",
+    "-1-临时/AI前端/Cursor科普/Cursor和MCP应用场景搭建.md",
+    "技术文章/VSCode Debug技巧.md",
+    "技术文章/vue源码学习.md",
+    "-1-临时/baowen-server.md",
+    "工作/0业务相关/whty/国际云v1.6.0迭代复盘.md",
+    "-1-临时/images/6bb9642f4fdc648f1e44115ac1516a4.png",
+    "技术文章/prompts temp.md",
+    "前端工程化-核心竞争力/vue3-template/5-代码规范.md",
+    "前端工程化-核心竞争力/vue3-template/Reference/ESLint+Prettier.md",
+    "前端工程化-核心竞争力/vue3-template/Reference/images/Untitled.png",
+    "前端工程化-核心竞争力/vue3-template/Reference/images/Untitled 3.png",
+    "技术文章/images/Untitled 4.png",
+    "前端工程化-核心竞争力/vue3-template/Reference/images",
+    "前端工程化-核心竞争力/vue3-template/Reference",
+    "前端工程化-核心竞争力/vue3-template/vue3-cli/从零开始构建脚手架.md",
     "前端工程化-核心竞争力/vue3-template/vue3-构建打包优化/images/Pasted image 20250319183054.png",
     "前端工程化-核心竞争力/vue3-template/vue3-构建打包优化/images",
     "工作/0业务相关/whty/开发项目/重庆通卡/vpn+服务器.md",
-    "技术文章/webpack4优化.md",
-    "-1-临时/AI前端/Claude-svg.md",
     "-1-临时/AI前端/images/Pasted image 20250319144516.png",
     "-1-临时/AI前端/images/Pasted image 20250319144501.png",
     "工作/0业务相关/whty/开发项目/重庆通卡/2期-乘车码H5.md",
     "工作/0业务相关/whty/开发项目/重庆通卡/images/cb659630df26102fd8091358e641275.png",
     "工作/0业务相关/whty/开发项目/重庆通卡/images/036602998f17563cb08d948ce566232.png",
-    "-1-临时/AI前端/Cursor科普/Cursor和MCP应用场景搭建.md",
     "-1-临时/AI前端/Cursor科普/一文搞懂cursor.md",
     "前端工程化-核心竞争力/vue3-template/vue3-构建打包优化",
-    "前端工程化-核心竞争力/vue3-template/vue3-cli/从零开始构建脚手架.md",
-    "前端工程化-核心竞争力/vue3-template/vue3-cli/images/2023-07-11-15-33-48.png",
-    "前端工程化-核心竞争力/vue3-template/vue3-cli/images/2023-07-11-15-33-08.png",
-    "前端工程化-核心竞争力/vue3-template/vue3-cli/images/2023-07-11-10-30-30.png",
-    "前端工程化-核心竞争力/vue3-template/vue3-cli/images/2023-07-11-10-30-21.png",
-    "前端工程化-核心竞争力/vue3-template/vue3-cli/images/2023-07-11-10-29-43.png",
     "前端工程化-核心竞争力/vue3-template/vue3-cli/images",
     "前端工程化-核心竞争力/vue3-template/vue3-cli",
     "前端工程化-核心竞争力/vue3-template/vue3-utils/storage封装.md",
@@ -271,24 +296,9 @@
     "前端工程化-核心竞争力/vue3-template/vue3-utils",
     "前端工程化-核心竞争力/vue3-template/vue3-component/svg预览组件.md",
     "前端工程化-核心竞争力/vue3-template/vue3 svg预览组件.md",
-    "前端工程化-核心竞争力/vue3-template/vue3-component/组件封装-todo.md",
-    "技术文章/vue源码学习.md",
-    "技术文章/blog/vue3 KeepAlive原理.md",
-    "技术文章/blog/vue3 hooks思考.md",
-    "技术文章/blog/vue2组件精讲.md",
-    "技术文章/npm.md",
-    "技术文章/blog/vue2 自动注册全局组件.md",
-    "技术文章/vscode二次开发.md",
-    "技术文章/blog/sonarQube简单介绍.md",
-    "技术文章/blog/Git常见问题.md",
-    "技术文章/ESLint+Prettier.md",
-    "技术文章/blog/Electron 的运行原理是什么.md",
-    "技术文章/blog/Echarts配置表.md",
     "技术文章/blog/images",
     "-1-临时/AI前端/Cursor科普/images",
     "技术文章/blog",
-    "-1-临时/AI前端/images",
-    "-1-临时/AI前端/Cursor科普",
     "未命名.canvas"
   ]
 }

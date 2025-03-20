@@ -1,16 +1,61 @@
-## 通用前置操作
-
+## 基础知识
 > vue-cli5 和 vue-cli4 区别：
 >
 > - 都是使用的 vue2.6+
 > - vue-cli4 使用的是 webpack4，vue-cli5 使用的是 webpack5
 
-对于优化主要是两个方面
+### configureWebpack和chainWebpack
+
+`configureWebpack` 和 `chainWebpack` 两者的不同之处在于：
+
+- `configureWebpack` 接收一个对象或者一个函数，用于直接修改 Webpack 的配置，其返回值将会被合并到最终的配置中。主要用于简单的配置，例如添加 Loader、Plugin 等。
+- `chainWebpack` 提供了一个基于 Webpack 的链式 API，允许你更加灵活地修改 Webpack 配置。可以用于更加复杂的配置，例如修改 Loader 规则、插件中具体的配置等。
+
+下面列举一些常见的使用场景：
+
+- 如果需要添加一些简单的 Loader 或者 Plugin，可以使用 `configureWebpack`。例如，在 Vue CLI 项目中添加一个新的 Loader：
+
+```jsx
+module.exports = {
+  configureWebpack: {
+    module: {
+      rules: [
+        {
+          test: /\\.txt$/,
+          use: "raw-loader",
+        },
+      ],
+    },
+  },
+};
+```
+
+如果需要更加细粒度地修改 Webpack 配置，可以使用 `chainWebpack`。例如，在 Vue CLI 项目中修改 babel-loader 的默认选项：
+
+```jsx
+module.exports = {
+  chainWebpack: (config) => {
+    config.module
+      .rule("js")
+      .use("babel-loader")
+      .tap((options) => {
+        options.plugins.push("babel-plugin-transform-runtime");
+        return options;
+      });
+  },
+};
+```
+
+所以，我们下面的优化配置，都会在 `configureWebpack` 和 `chainWebpack` 中进行编写。
+
+## 通用前置操作
+
+对于优化主要是两个方面：
 
 - 构建速度
 - 打包体积
 
-所以不管是分析问题还是解决问题有围绕这连个方面进行处理。
+所以不管是分析问题还是解决问题有围绕这两个方面进行处理。
 
 **Vue-Cli 自带**
 
@@ -40,6 +85,8 @@ vue inspect --mode development > output-dev.js
 ```
 
 ### 分析构建时间
+
+通过 speed-measure-webpack-plugin 测量网页包构建速度，并会输出各个模块编译的时长，可以帮助我们更好的找到耗时模块。
 
 安装：
 
@@ -613,9 +660,11 @@ terser-webpack-plugin 在 v5 弃用了 cache 选项。而且在 Webpack 5 中，
 如果是 vue-cli4/5 搭建的项目，需要配置：
 
 - 构建缓存（**只有 4 需要，且热更新耗时才需要**）：hard-source-webpack-plugin
-- css treeshaking：`@fullhuman/purgecss@^3`
+- css tree shaking：`@fullhuman/purgecss@^3`
 - 打包压缩：`compression-webpack-plugin@^6`
 - 图片压缩
 - 生产环境关闭 sourcemap
 - 删除 console.log
 - 去掉 preload 和 prefetch
+
+更多优化，参考：[webpack打包速度和体积优化](../../../技术文章/webpack通关秘籍/webpack打包速度和体积优化.md)
