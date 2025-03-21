@@ -4,5 +4,8 @@
   "useMarkdownLinks": true,
   "attachmentFolderPath": "./images",
   "newLinkFormat": "relative",
-  "spellcheck": false
+  "spellcheck": false,
+  "readableLineLength": false,
+  "autoPairBrackets": false,
+  "autoPairMarkdown": false
 }
