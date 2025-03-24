@@ -1,8 +1,8 @@
 {
-  "cssTheme": "Things",
+  "cssTheme": "",
   "textFontFamily": "",
   "monospaceFontFamily": "",
-  "theme": "obsidian",
+  "theme": "system",
   "baseFontSize": 16,
   "accentColor": "",
   "enabledCssSnippets": [
