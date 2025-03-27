@@ -4,39 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "2163b3e014628022",
+        "id": "384ec7c5331199d6",
         "type": "tabs",
         "children": [
-          {
-            "id": "79f6ffcc90f8e050",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "技术文章/性能优化/前端性能优化.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "前端性能优化"
-            }
-          },
           {
             "id": "f8efb5dc0bf10650",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "前端工程化-核心竞争力/monitor/前端监控SDK.md",
+                "file": "前端工程化-核心竞争力/vue3-template/vue3-构建打包优化/vue-cli4和5构建打包优化.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "前端监控SDK"
+              "title": "vue-cli4和5构建打包优化"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -68,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "FCP",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -89,8 +74,7 @@
               "title": "书签"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -158,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "前端工程化-核心竞争力/monitor/前端监控SDK.md",
+                "file": "前端工程化-核心竞争力/vue3-template/vue3-构建打包优化/vue-cli4和5构建打包优化.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "前端监控SDK 的大纲"
+              "title": "vue-cli4和5构建打包优化 的大纲"
             }
           }
         ],
@@ -201,9 +185,27 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f8efb5dc0bf10650",
+  "active": "89d58224b5279b73",
   "lastOpenFiles": [
+    "技术文章/webpack通关秘籍/webpack打包速度和体积优化.md",
+    "前端工程化-核心竞争力/vue3-template/vue3-构建打包优化/vue-cli4和5构建打包优化.md",
+    "前端工程化-核心竞争力/vue3-template/vue3-构建打包优化/file/全量配置模板/webpack.config3.js",
+    "前端工程化-核心竞争力/vue3-template/vue3-构建打包优化/file/全量配置模板/webpack.config2.js",
+    "前端工程化-核心竞争力/vue3-template/vue3-构建打包优化/file/全量配置模板/webpack.config.js",
+    "前端工程化-核心竞争力/vue3-template/vue3-构建打包优化/file/webpack5-prod.js",
+    "前端工程化-核心竞争力/vue3-template/vue3-构建打包优化/file/全量配置模板",
+    "前端工程化-核心竞争力/vue3-template/vue3-构建打包优化/file/webpack4-prod.js",
+    "前端工程化-核心竞争力/vue3-template/vue3-构建打包优化/file",
+    "前端工程化-核心竞争力/vue3-template/vue3-构建打包优化/file/webpack-prod.js.md",
+    "file/webpack-prod.js.md",
+    "file",
+    "Obsidian使用技巧.md",
+    "前端工程化-核心竞争力/vue3-template/vue3-构建打包优化/images/Pasted image 20250327142643.png",
+    "前端工程化-核心竞争力/vue3-template/vue3-构建打包优化/images/Pasted image 20250327142300.png",
+    "技术文章/性能优化/vue2-webpack性能优化.md",
     "技术文章/性能优化/前端性能优化.md",
+    "技术文章/webpack通关秘籍/webpack编写loader和plugin.md",
+    "技术文章/性能优化/BlueLink项目打包体积优化.md",
     "前端工程化-核心竞争力/monitor/前端监控SDK.md",
     "技术文章/性能优化/chrome-devtools-performance.md",
     "技术文章/VSCode Debug技巧.md",
@@ -223,32 +225,13 @@
     "技术文章/blog/蓝湖CSS REM如何填写？.md",
     "-1-临时/npm、yarn 和 pnpm 常用指令对比表格.md",
     "-1-临时/baowen-server.md",
-    "-1-临时/日记/2025-01-20.md",
-    "-1-临时/日记/2025-03-14.md",
-    "-1-临时/日记/2025-03-21.md",
-    "-1-临时/AI前端/Claude-svg.md",
-    "前端工程化-核心竞争力/vue3-template/10-配置Pinia.md",
-    "前端工程化-核心竞争力/cicd/Nginx从入门到实践.md",
-    "工作/团队规范/☢️开发注意清单.md",
-    "工作/团队规范/✅前端开发流程SOP.md",
-    "前端工程化-核心竞争力/vue3-template/vue3-cli/从零开始构建脚手架.md",
     "前端工程化-核心竞争力/images/Pasted image 20250323165829.png",
     "前端工程化-核心竞争力/vue3-template/vue3-构建打包优化/images/Pasted image 20250320162651.png",
     "-1-临时/images/6bb9642f4fdc648f1e44115ac1516a4.png",
     "前端工程化-核心竞争力/vue3-template/Reference/images/Untitled.png",
     "前端工程化-核心竞争力/vue3-template/Reference/images/Untitled 3.png",
-    "技术文章/images/Untitled 4.png",
     "前端工程化-核心竞争力/vue3-template/Reference/images",
     "前端工程化-核心竞争力/vue3-template/Reference",
-    "前端工程化-核心竞争力/vue3-template/vue3-构建打包优化/images/Pasted image 20250319183054.png",
-    "前端工程化-核心竞争力/vue3-template/vue3-构建打包优化/images",
-    "前端工程化-核心竞争力/vue3-template/vue3-构建打包优化",
-    "前端工程化-核心竞争力/vue3-template/vue3-cli/images",
-    "前端工程化-核心竞争力/vue3-template/vue3-cli",
-    "前端工程化-核心竞争力/vue3-template/vue3-utils",
-    "技术文章/blog/images",
-    "-1-临时/AI前端/Cursor科普/images",
-    "技术文章/blog",
     "未命名.canvas"
   ]
 }

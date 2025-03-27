@@ -4,6 +4,33 @@
 > - 都是使用的 vue2.6+
 > - vue-cli4 使用的是 webpack4，vue-cli5 使用的是 webpack5
 
+### 优化思路
+
+对于优化主要是两个方面：
+
+- **构建速度**
+- **打包体积**
+
+所以不管是分析问题还是解决问题有围绕这两个方面进行处理。
+
+**1、首先看优化业务代码体积：**
+
+1. 看看是否使用了大量的图片、字体文件等资源，是否可以进行优化或按需加载。
+2. 文件是否按需加载，将每个路由页面单独打包为一个文件。
+
+**2、然后再考虑webpack的优化**，比如：
+- 检查 `node_modules` 是否被错误地打包进最终的 bundle 中。
+- **Loaders**：确认是否可以使用缓存，如 `babel-loader` 的缓存设置。
+- **Externals**：优化 Loader 的文件搜索范围，考虑是否可以将某些库设置为外部引用，以减少打包时间。
+- **Code Splitting**：利用 `splitChunks` 进行代码拆分，异步加载不必要的代码。
+- **Source Map**：确认是否真的需要生成 source map，或者选择一个构建速度更快的 source map 类型。
+- **DllPlugin** 可以将特定的类库提前打包然后引入，只有当类库更新版本才有需要重新打包
+- 考虑是否可以使用 [HardSourceWebpackPlugin](https://github.com/mzgoddard/hard-source-webpack-plugin) 来提供一个中间缓存，优化启动速度。当你使用这个插件并运行 webpack 两次时，你会看到效果：第一次构建将花费正常的时间，而第二次构建将会显著加快。
+- 如果你的项目很大，可以考虑使用 `thread-loader` 或其他并行化工具来加速构建。
+
+
+以上仅为思路，具体配置继续往下看。
+
 ### configureWebpack和chainWebpack
 
 `configureWebpack` 和 `chainWebpack` 两者的不同之处在于：
@@ -48,19 +75,7 @@ module.exports = {
 
 所以，我们下面的优化配置，都会在 `configureWebpack` 和 `chainWebpack` 中进行编写。
 
-## 通用前置操作
-
-对于优化主要是两个方面：
-
-- 构建速度
-- 打包体积
-
-所以不管是分析问题还是解决问题有围绕这两个方面进行处理。
-
-**Vue-Cli 自带**
-
-- **cache-loader** 会默认为 `Vue/Babel/TypeScript` 编译开启。文件会缓存在 `node_modules/.cache` 中。 如果你遇到了编译方面的问题，记得先清缓存目录之后再试试看。
-- **thread-loader** 会在多核 CPU 的机器上为 `Babel/TypeScript` 转译开启。
+## Vue-Cli4/5 默认配置
 
 ### 查看 Vue-Cli 默认配置
 
@@ -71,7 +86,7 @@ vue inspect --mode development > output-dev.js
 
 然后通过 chatgpt 还原成 webpack 的配置：
 
-> 下面是通过 vue-cli 搭建的前端项目，通过 vue inspect 输出的被序列化的格式，请将其还原成原本的 webpack 配置文件，我的目的是了解 vue-cli 默认对 webpack 做了什么配置：
+> 问chatgpt：下面是通过 vue-cli 搭建的前端项目，通过 vue inspect 输出的被序列化的格式，请将其还原成原本的 webpack 配置文件，我的目的是了解 vue-cli 默认对 webpack 做了什么配置：
 
 ```
 {
@@ -86,24 +101,36 @@ vue inspect --mode development > output-dev.js
 
 ### 分析构建时间
 
-通过 speed-measure-webpack-plugin 测量网页包构建速度，并会输出各个模块编译的时长，可以帮助我们更好的找到耗时模块。
+通过 `speed-measure-webpack-plugin` 测量网页包构建速度，并会输出各个模块编译的时长，可以帮助我们更好的找到耗时模块。
 
 安装：
 
 ```
-npm install --save-dev speed-measure-webpack-plugin
+npm install speed-measure-webpack-plugin -D
 ```
 
 配置：
 
 ```js
-const SpeedMeasurePlugin = require('speed-measure-webpack-plugin');
-module.exports = {
-  chainWebpack: (config) => {
-    config.plugin('speed-measure-webpack-plugin').use(SpeedMeasurePlugin).end();
-  },
+const SpeedMeasurePlugin = require("speed-measure-webpack-plugin");
+const smp = new SpeedMeasurePlugin();
+
+const webpackConfig = {
+  // 你的 Webpack 配置
+  // ...
 };
+
+module.exports = smp.wrap(webpackConfig);
 ```
+
+![](images/Pasted%20image%2020250327142300.png)
+
+**如何使用？**
+
+> [!tip] 通过分析，
+> 1、如果分析发现构建时间短，则不需要优化。
+> 2、如果需要优化，这找到速度瓶颈，比如是某个 loader 或者 plugin，然后就可以通过 chatgpt 或者 google 查找关于这个 loader，plugin 的速度优化建议。
+
 
 ### 查看打包大小
 
@@ -115,56 +142,20 @@ vue-cli-service build --report
 
 成功后就会在项目目录下找到`/dist/report.html`
 
-和之前的 webpack-bundle-analyzer 效果一样，就没必要使用了。
+和之前的 `webpack-bundle-analyzer` 效果一样，就没必要使用了。
+
+**如何使用？**
+
+> [!tip] 通过分析，
+> 通过分析，找到速度瓶颈，比如是 ElemetUI 包比较大，然后就可以通过 chatgpt 或者 google 查找关于这个包体积大小优化建议。
+
 
 ## vue-cli4
 
 下面是还原的 production 下的 webpack 配置：[webpack-prod.js](./file/webpack-prod.js)
 
-提升构建速度
 
-> 如果分析构建时间短，则不需要优化。
-
-### 构建速度优化
-
-**1、并行构建**：[已默认配置](https://github.com/vuejs/vue-cli/tree/v4.5.19/docs/config#parallel)（是否为 Babel 或 TypeScript 使用  `thread-loader`）
-
-**2、并行压缩**：从转换的代码可以看到 TerserPlugin 已默认配置 parallel
-
-**3、开启缓存**： - TerserPlugin 已默认配置 cache - loader 缓存：已经默认开启 vue-loader，babel-loader, eslint-loader，ts-loader 等缓存 - 使用 hard-source-webpack-plugin 配置持久化缓存功能
-安装：`npm install hard-source-webpack-plugin -D`
-配置：
-
-````js
-const HardSourceWebpackPlugin = require('hard-source-webpack-plugin');
-
-module.exports = {
-  configureWebpack: (config) => {
-    /**
-     * 开启 HardSourceWebpackPlugin 构建缓存
-     * HardSourceWebpackPlugin 的缓存机制依赖于文件系统中的缓存数据。
-     * 如果在开发环境中生成的缓存数据由于某些原因被损坏或者不完整，可能会导致生产环境中的构建出现问题。所以在生产环境中不建议使用 HardSourceWebpackPlugin。
-     *
-     */
-    if (process.env.NODE_ENV !== 'production') {
-      config.plugins.push(new HardSourceWebpackPlugin());
-    }
-  },
-};
-
-		```
-
-缓存的默认路径为：`node_modules/.cache/hard-source`
-
-开启前后使用npm run dev对比，速度明显减小（工程为vue-cli4默认构建的hello-word项目）
-
-| 项目/次数                     | 1     | 2     | 3     | 4     |
-| ------------------------- | ----- | ----- | ----- | ----- |
-| 不加HardSourceWebpackPlugin | 3.49s | 1.12s | 1.08s | 1.13s |
-| 加HardSourceWebpackPlugin  | 2.46s | 0.27s | 0.29s | 0.77s |
-
-
-> vue-cli4默认没用生成vue.config.js，需要自己手动添加：
+> vue-cli4默认没有生成vue.config.js，需要自己手动添加：
 
 模板：
 
@@ -185,6 +176,78 @@ module.exports = {
 };
 ```
 
+### 构建速度优化
+
+**0、通用速度优化**： 使用高版本的 webpack 和 Node.js ^1cfaa8
+
+新版本的内容都会有比较大的性能提升，对于打包速度提升比较明显，能升级进来升级。
+
+比如从 webpack3 升级到 webpack4，nodejs 从 12 升级到 16.
+
+但是也要注意兼容性问题。
+
+![](images/Pasted%20image%2020250327142643.png)
+
+
+**1、并行构建**：[默认开启](https://github.com/vuejs/vue-cli/tree/v4.5.19/docs/config#parallel)的。
+
+
+**2、并行压缩**：默认开启。
+
+
+**3、开启缓存**： 
+> 默认部分开启（Loader 缓存），无需额外配置。它利用 cache-loader 和 babel-loader 等的缓存，但不是 Webpack 5 那种更全面的文件系统缓存。
+
+> 默认启用了以下 Loader 的缓存机制：vue-loader，babel-loader，ts-loader，所有缓存文件默认存储在 `node_modules/.cache`。
+>
+>其他 Loader：如 css-loader、file-loader 等默认未启用缓存，需通过插件（如 cache-loader 或 hard-source-webpack-plugin）手动扩展。
+
+cache-loader和hard-source-webpack-plugin如何选择？
+
+> 对于cache-loader，是针对单个 Loader 的缓存（如 babel-loader、vue-loader、ts-loader 等），缓存其处理结果。而hard-source-webpack-plugin是全局缓存，缓存整个模块依赖树及中间构建结果。所以，优先使用hard-source-webpack-plugin。
+
+使用 **hard-source-webpack-plugin** 配置持久化缓存功能：
+
+安装：`npm install hard-source-webpack-plugin -D`
+配置：
+
+```js
+const HardSourceWebpackPlugin = require('hard-source-webpack-plugin');
+
+module.exports = {
+  configureWebpack: (config) => {
+    /**
+     * 开启 HardSourceWebpackPlugin 构建缓存
+     * HardSourceWebpackPlugin 的缓存机制依赖于文件系统中的缓存数据。
+     * 如果在开发环境中生成的缓存数据由于某些原因被损坏或者不完整，可能会导致生产环境中的构建出现问题。所以在生产环境中不建议使用 HardSourceWebpackPlugin。
+     *
+     */
+    if (process.env.NODE_ENV !== 'production') {
+      config.plugins.push(
+	      new HardSourceWebpackPlugin({
+		      // 可选配置项
+	        cacheDirectory: 'node_modules/.cache/hard-source/[confighash]',
+	        configHash: function(webpackConfig) {
+	          // 根据 webpack 配置生成哈希，确保配置变更时缓存失效
+	          return require('node-object-hash')({ sort: false }).hash(webpackConfig);
+	        },
+	      })
+      );
+    }
+  },
+};
+```
+
+缓存的默认路径为：`node_modules/.cache/hard-source`
+
+开启前后使用npm run dev对比，速度明显减小（工程为vue-cli4默认构建的hello-word项目）
+
+| 项目/次数                     | 1     | 2     | 3     | 4     |
+| ------------------------- | ----- | ----- | ----- | ----- |
+| 不加HardSourceWebpackPlugin | 3.49s | 1.12s | 1.08s | 1.13s |
+| 加HardSourceWebpackPlugin  | 2.46s | 0.27s | 0.29s | 0.77s |
+
+
 > [!warning] 关于`DllPlugin`，DllPlugin 是通过预编译特定的模块（通常是第三方库），将这些模块打包成独立的动态链接库 (DLL)，在主构建中只需要引用这些预编译的模块，从而大幅减少构建时间。
 >
 > 但是，如果已经使用 HardSourceWebpackPlugin 并且不考虑缓存失效的情况下，会将第三方依赖（如 React、Lodash 等）缓存到文件系统中。这样在后续的构建中，这些依赖的编译结果会直接从缓存中读取，因此无需重新编译这些依赖。在这种情况下，`DllPlugin` 的作用会有所减弱，因为 `HardSourceWebpackPlugin` 已经提供了类似的缓存功能。确实不再需要 DllPlugin。
@@ -193,9 +256,6 @@ module.exports = {
 >
 > [dll option will be removed. Webpack 4 should provide good enough perf and the cost of maintaining DLL mode inside Vue CLI is no longer justified.](https://github.com/vuejs/vue-cli/issues/1205)
 
-> 关于 thread-loader，并不是所有的 loader 都要使用：
-
-仅在耗时的操作中使用 thread-loader，否则使用 thread-loader 会后可能会导致项目构建时间变得更长，因为每个 worker 都是一个独立的 node.js 进程，其开销大约为 600ms 左右，同时还会限制跨进程的数据交换等。所以一般只在 babel-loader 中使用。
 
 ### 减小打包体积
 
@@ -214,7 +274,9 @@ vue add @fullhuman/purgecss@^3
 
 然后会自动生成并配置好 postcss.config.js，无需其他额外配置。
 
-**2、gzip 压缩**
+**2、gzip/br 压缩**
+
+使用 compression-webpack-plugin 启用 Gzip 压缩
 
 安装：
 
@@ -269,6 +331,8 @@ server {
 
 **3、图片压缩**
 
+使用 `image-webpack-loader` 对图片进行优化，减少图片文件的大小。
+
 安装：
 
 ```
@@ -303,8 +367,10 @@ chainWebpack: (config) => {
 
 **4、动态 polyfill**
 
-vue-cli 已经基于你的浏览器目标自动决定要运用的语法转换和 polyfill，无需我们配置：
-https://github.com/vuejs/vue-docs-zh-cn/blob/master/vue-babel-preset-app/README.md
+vue-cli 已经基于你的浏览器目标自动决定要运用的语法转换和 polyfill，[无需我们配置](https://github.com/vuejs/vue-docs-zh-cn/blob/master/vue-babel-preset-app/README.md)。
+
+或者，我们通过在 package.json 中的 `browserslist` 限制目标浏览器（影响Babel和Autoprefixer的工作）。
+
 
 **5、production 环境不生成 SourceMap**
 
@@ -318,18 +384,21 @@ module.exports = {
 
 > 慎用，除非公司有稳定的 cdn 服务。
 
-不需要安装 html-webpack-externals-plugin，Vue CLI 自带的 `html-webpack-plugin` 已经足够用于我们的需求。
+不需要安装 `html-webpack-externals-plugin`，Vue CLI 自带的 `html-webpack-plugin` 已经足够用于我们的需求。
 
 配置：
 
 ```js
+const IS_PROD = process.env.NODE_ENV === 'production';
 module.exports = {
   configureWebpack: (config) => {
-    config.externals = {
-      vue: 'Vue',
+    config.externals = IS_PROD ? {
+      'vue': 'Vue',
       'vue-router': 'VueRouter',
-      axios: 'axios',
-    };
+      'vuex': 'Vuex',
+      'axios': 'axios',
+      'element-ui': 'ELEMENT' // 注意 Element UI 通常暴露为 ELEMENT
+    } : {} // 开发环境不使用 externals，方便调试
   },
   chainWebpack: (config) => {
     config.plugin('html').tap((args) => {
@@ -378,15 +447,16 @@ module.exports = {
 
 **7、删除 console.log**
 
-安装：
+>  Vue CLI 虽然内置了 TerserPlugin，但它的路径可能不会直接暴露在 configureWebpack 的作用域中，所以不能使用下面的方式，除非再次手动安装terser-webpack-plugin
 
-```
-npm install terser-webpack-plugin@^4 --save-dev
-```
+> 注意：是vue-cli内置了TerserPlugin，但是webpack4没有内置！但webpack5内置了！
 
-配置：
+下面是**不建议**的方式：
 
 ```js
+// 1、安装：npm install terser-webpack-plugin@^4 --save-dev
+
+// 2、配置
 const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = {
@@ -411,6 +481,30 @@ module.exports = {
 };
 ```
 
+推荐的方式是 使用 **`chainWebpack`（推荐）**
+
+Vue CLI 提供了 `chainWebpack` 方法，可以安全地修改 Terser 配置，无需手动引入 `terser-webpack-plugin`，而且不会覆盖 Vue CLI 默认的优化配置。
+
+```js
+module.exports = {
+  chainWebpack: (config) => {
+    if (process.env.NODE_ENV === 'production') {
+      config.optimization.minimizer('terser').tap((args) => {
+        args[0].terserOptions = {
+          ...args[0].terserOptions,
+          compress: {
+            ...args[0].terserOptions?.compress,
+            drop_console: true, // 生产环境移除 console
+            drop_debugger: true, // 生产环境移除 debugger
+          },
+        };
+        return args;
+      });
+    }
+  },
+};
+```
+
 ### 其他友好配置
 
 **1、chunk-vendors 分包**
@@ -421,28 +515,60 @@ module.exports = {
 chainWebpack: config => {
   if (process.env.NODE_ENV === 'production') {
     config.optimization.splitChunks({
-      chunks: 'all', // 表明选择哪些 chunk 进行优化。通用设置，可选值：all/async/initial。设置为 all 意味着 chunk 可以在异步和非异步 chunk 之间共享。
-      minSize: 20000, // 允许新拆出 chunk 的最小体积
-      maxAsyncRequests: 10, // 每个异步加载模块最多能被拆分的数量
-      maxInitialRequests: 10, // 每个入口和它的同步依赖最多能被拆分的数量
+      // 对所有的包进行拆分。三个值："initial" 初始化，"all"(默认就是all)，"async"（动态加载）
+      // initial: **只拆分初始加载的同步 chunk**（如 `import xxx` 直接引入的模块）
+      // async: **只拆分动态导入的异步 chunk**（如 `import('xxx')` 或 `() => import('xxx')`）
+      // all: **不分同步/异步，全部 chunk 参与拆分**
+      chunks: 'all', 
+	
+	  // 形成一个新代码块最小的体积,只有 >= minSize 的bundle会被拆分出来。默认值是30kb
+      minSize: 20000,
+      
+      /**
+      // 控制**页面刚打开**时，一次性加载的 JS 文件最多可以有多少个。
+		假设你的网站有 10 个 JavaScript 代码块（chunk），Webpack 默认会尝试把它们拆开，以便浏览器按需加载。但如果拆得太碎，浏览器一次要发太多请求，反而影响性能。所以 **`maxInitialRequests` 设定了一个上限**，让 Webpack 在拆包时遵循这些规则。
+		*/
+      maxInitialRequests: 10,
+      
+      // 与 maxInitialRequests 相同，控制**懒加载（异步加载）**时，同时加载的 JS 文件最多可以有多少个。
+      maxAsyncRequests: 10, 
+      
       enforceSizeThreshold: 50000, // 强制执行拆分的体积阈值并忽略其他限制
       cacheGroups: {
         libs: { // 第三方库
-          name: 'chunk-libs',
+          name(module) {
+            // 获取模块名称
+            const packageName = module.context.match(
+              /[\\/]node_modules[\\/](.*?)([\\/]|$)/
+            )[1];
+            // 将模块名称中的 '@' 和 '/' 替换为 '-'
+            return `npm.${packageName.replace("@", "").replace("/", "-")}`;
+          },
           test: /[\\/]node_modules[\\/]/, // 请注意'[\\/]'的用法，是具有跨平台兼容性的路径分隔符
+          // 使用 enforce 属性可以限制哪些模块必须打包进当前缓存组，从而控制代码分割的过程，提高页面加载速度。它可以取两个值： 'preemptive' 和 'post'。
+	          // 'preemptive'：表示该缓存组具有预处理特性，即满足条件的模块会被提取到对应的缓存组中，但不会阻止其他缓存组的创建和使用。
+	          // 'post'：表示该缓存组具有后处理特性，即满足条件的模块会被优先提取到对应的缓存组中，在其他缓存组无法再次匹配这些模块时，才会考虑将剩余的模块提取到该缓存组中。
+	          // 例如，我们可以将常用工具函数库 lodash 的缓存组定义为 enforce: 'preemptive'，表示这些模块尽可能地提前打包到对应的缓存组中，以实现更快的加载速度。
+	          // enforce: true,
+
+          // priority 属性是 cacheGroups 配置项中用来指定缓存组优先级的属性。
+	          // 这个属性的值越大，表示该缓存组的优先级越高，在实际打包过程中，Webpack 会先考虑优先级高的缓存组进行代码分割。
+	          // 举个例子，假设我们有两个缓存组 A 和 B，并且 A 的 priority 值为 10，B 的 priority 值为 20 。那么在打包过程中，Webpack 会首先考虑 B 缓存组进行代码分割，如果 B 缓存组匹配不到任何模块，则会考虑 A 缓存组进行代码分割。
           priority: 10 // 优先级，执行顺序就是权重从高到低
-          chunks: 'initial' // 只打包最初依赖的第三方
+          chunks: 'initial' //  **只拆分初始加载的同步 chunk**（如 `import xxx` 直接引入的模块）
         },
         elementUI: { // 把 elementUI 单独分包
           name: 'chunk-elementUI',
           test: /[\\/]node_modules[\\/]element-ui[\\/]/,
           priority: 20 // 权重必须比 libs 大，不然会被打包进 libs 里
         },
+        // 拆分公共文件
         commons: {
-          name: 'chunk-commons',
-          minChunks: 2, // 拆分前，这个模块至少被不同 chunk 引用的次数
-          priority: 0,
-          reuseExistingChunk: true
+          name: "chunk-commons",
+          test: resolve("src/components"), // can customize your rules
+          minChunks: 3, // 模块被引用几次以上的才抽离。 表示在分割前，可被多少个chunk分享的最小值
+          reuseExistingChunk: true, // 表示是否使用已有的chunk，true表示不会重新生成新的，即几个chunk复用被拆分出去的一个module
+          priority: 30,
         },
         svgIcon: {
           name: 'chunk-svgIcon',
@@ -465,7 +591,7 @@ chainWebpack: config => {
 }
 ```
 
-**2、IgnorePlugin**：忽略指定的模块或文件，通常用于如果引入了 moment.js，则忽略其他的语言包，另外我通常会在项目中新建 demo 模板，也可以使用`IgnorePlugin`忽略测试文件。
+**2、IgnorePlugin**：忽略指定的模块或文件，通常用于如果引入了 `moment.js`，则忽略其他的语言包，另外我通常会在项目中新建 demo 模板，也可以使用`IgnorePlugin`忽略测试文件。
 
 ```js
 const webpack = require('webpack');
@@ -631,9 +757,41 @@ memory 意味着缓存数据会存储在内存中，重启构建工具后缓存�
 
 ### 构建速度优化
 
-terser-webpack-plugin 在 v5 弃用了 cache 选项。而且在 Webpack 5 中，一般不再需要使用 `hard-source-webpack-plugin`，因为 Webpack 5 本身已经内置了强大的`cache`缓存功能，能够提供与 `hard-source-webpack-plugin` 类似的缓存效果。
+> 关于缓存：terser-webpack-plugin 在 v5 弃用了 cache 选项。而且在 Webpack 5 中，一般不再需要使用 `hard-source-webpack-plugin`，因为 Webpack 5 本身已经内置了强大的`cache`缓存功能，能够提供与 `hard-source-webpack-plugin` 类似的缓存效果。
 
-所以，构建速度优化方面无需任何额外配置。
+> 关于并行：会自动为多核CPU使用thread-loader开启[并行构建](https://github.com/vuejs/vue-cli/blob/v5.0.8/docs/config/index.md#parallel)。
+
+**0、通用速度优化**：参考：[0、通用速度优化](vue-cli4和5构建打包优化.md#^1cfaa8)
+
+**1、并行构建**：已默认开启
+
+**2、并行压缩**：已默认开启
+
+**3、开启缓存**：已默认开启
+
+> 在 Vue CLI 5 中，**构建缓存（持久化文件系统缓存）是默认开启的**，适用于 serve 和 build 命令。这是 Webpack 5 的一个核心特性，旨在大幅提升后续构建的速度。
+> 
+> 当运行 npm run serve 或 npm run build 时，Webpack 5 会自动将模块和 chunk 的构建结果缓存到文件系统中（默认位置：node_modules/.cache/webpack）。
+
+**自定义缓存**: 你可以对缓存进行更细粒度的配置，例如更改缓存目录或配置缓存失效的依赖项：
+
+```js
+// vue.config.js
+const path = require('path');
+
+module.exports = {
+  configureWebpack: {
+    cache: {
+      type: 'filesystem', // 显式指定类型（默认就是 filesystem）
+      cacheDirectory: path.resolve(__dirname, '.temp_cache'), // 更改缓存目录
+      buildDependencies: {
+        // 添加额外的文件或配置作为缓存失效的依赖项
+        config: [__filename] // 当 vue.config.js 本身改变时，缓存失效
+      }
+    }
+  }
+};
+```
 
 ### 减小打包体积
 
@@ -667,4 +825,7 @@ terser-webpack-plugin 在 v5 弃用了 cache 选项。而且在 Webpack 5 中，
 - 删除 console.log
 - 去掉 preload 和 prefetch
 
-更多优化，参考：[webpack打包速度和体积优化](../../../技术文章/webpack通关秘籍/webpack打包速度和体积优化.md)
+更多优化，参考：
+- [webpack打包速度和体积优化](../../../技术文章/webpack通关秘籍/webpack打包速度和体积优化.md)
+- [ ] [玩转 webpack*webpack*打包-极客时间](https://time.geekbang.org/course/intro/100028901)
+- [ ] [掘金小册](https://juejin.cn/book/7034689774719860739/section/7034489795707404329)
