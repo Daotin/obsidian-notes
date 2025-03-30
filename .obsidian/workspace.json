@@ -4,24 +4,53 @@
     "type": "split",
     "children": [
       {
-        "id": "384ec7c5331199d6",
+        "id": "2163b3e014628022",
         "type": "tabs",
         "children": [
+          {
+            "id": "79f6ffcc90f8e050",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "技术文章/性能优化/前端性能优化.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "前端性能优化"
+            }
+          },
+          {
+            "id": "24ce7ae3fdfe0cf8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "前端工程化-核心竞争力/monitor/前端监控SDK.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "前端监控SDK"
+            }
+          },
           {
             "id": "f8efb5dc0bf10650",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "-1-临时/AI前端/Claude-svg.md",
+                "file": "技术文章/性能优化/通过Timing瀑布图分析前端性能问题.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Claude-svg"
+              "title": "通过Timing瀑布图分析前端性能问题"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -53,7 +82,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "Lighthouse",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -94,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "-1-临时/AI前端/Cursor科普/Cursor无限续杯.md",
+                "file": "前端工程化-核心竞争力/monitor/前端监控SDK.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +133,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Cursor无限续杯 的反向链接列表"
+              "title": "前端监控SDK 的反向链接列表"
             }
           },
           {
@@ -113,12 +142,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "-1-临时/AI前端/Cursor科普/Cursor无限续杯.md",
+                "file": "前端工程化-核心竞争力/monitor/前端监控SDK.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Cursor无限续杯 的出链列表"
+              "title": "前端监控SDK 的出链列表"
             }
           },
           {
@@ -142,13 +171,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "-1-临时/AI前端/Claude-svg.md",
+                "file": "前端工程化-核心竞争力/monitor/前端监控SDK.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Claude-svg 的大纲"
+              "title": "前端监控SDK 的大纲"
             }
           }
         ],
@@ -172,7 +201,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 328.5
+    "width": 316.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -185,31 +214,28 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f8efb5dc0bf10650",
+  "active": "24ce7ae3fdfe0cf8",
   "lastOpenFiles": [
+    "前端工程化-核心竞争力/monitor/images/Pasted image 20250330172557.png",
+    "前端工程化-核心竞争力/monitor/images/Pasted image 20250330120914.png",
+    "前端工程化-核心竞争力/monitor/images/Pasted image 20250330120812.png",
+    "前端工程化-核心竞争力/monitor/images/Pasted image 20250330120512.png",
+    "技术文章/性能优化/前端性能优化.md",
+    "前端工程化-核心竞争力/monitor/前端监控SDK.md",
+    "技术文章/性能优化/通过Timing瀑布图分析前端性能问题.md",
+    "技术文章/性能优化/关于requestAnimationFrame的理解.md",
+    "技术文章/性能优化/chrome-devtools-performance.md",
+    "技术文章/VSCode Debug技巧.md",
     "-1-临时/AI前端/images/Pasted image 20250328165946.png",
-    "前端工程化-核心竞争力/vue3-template/vue3-构建打包优化/vue-cli4和5构建打包优化.md",
-    "技术文章/webpack通关秘籍/webpack打包速度和体积优化.md",
+    "前端工程化-核心竞争力/vue3-template/vue3-构建打包优化/images/Pasted image 20250327142643.png",
+    "前端工程化-核心竞争力/vue3-template/vue3-构建打包优化/images/Pasted image 20250327142300.png",
     "前端工程化-核心竞争力/vue3-template/vue3-构建打包优化/file/全量配置模板/webpack.config3.js",
     "前端工程化-核心竞争力/vue3-template/vue3-构建打包优化/file/全量配置模板/webpack.config2.js",
     "前端工程化-核心竞争力/vue3-template/vue3-构建打包优化/file/全量配置模板/webpack.config.js",
-    "前端工程化-核心竞争力/vue3-template/vue3-构建打包优化/file/webpack5-prod.js",
     "前端工程化-核心竞争力/vue3-template/vue3-构建打包优化/file/全量配置模板",
+    "前端工程化-核心竞争力/vue3-template/vue3-构建打包优化/file/webpack5-prod.js",
     "前端工程化-核心竞争力/vue3-template/vue3-构建打包优化/file/webpack4-prod.js",
     "前端工程化-核心竞争力/vue3-template/vue3-构建打包优化/file",
-    "前端工程化-核心竞争力/vue3-template/vue3-构建打包优化/file/webpack-prod.js.md",
-    "file/webpack-prod.js.md",
-    "file",
-    "Obsidian使用技巧.md",
-    "前端工程化-核心竞争力/vue3-template/vue3-构建打包优化/images/Pasted image 20250327142643.png",
-    "前端工程化-核心竞争力/vue3-template/vue3-构建打包优化/images/Pasted image 20250327142300.png",
-    "技术文章/性能优化/vue2-webpack性能优化.md",
-    "技术文章/性能优化/前端性能优化.md",
-    "技术文章/webpack通关秘籍/webpack编写loader和plugin.md",
-    "技术文章/性能优化/BlueLink项目打包体积优化.md",
-    "前端工程化-核心竞争力/monitor/前端监控SDK.md",
-    "技术文章/性能优化/chrome-devtools-performance.md",
-    "技术文章/VSCode Debug技巧.md",
     "工作/0业务相关/whty/🔒whty账号.md",
     "工作/0业务相关/whty/开发项目/重庆通卡/images/Pasted image 20250219133702.png",
     "工作/0业务相关/whty/开发项目/重庆通卡/images/cb659630df26102fd8091358e641275.png",
@@ -226,13 +252,16 @@
     "技术文章/blog/蓝湖CSS REM如何填写？.md",
     "-1-临时/npm、yarn 和 pnpm 常用指令对比表格.md",
     "-1-临时/baowen-server.md",
+    "-1-临时/日记/2025-01-20.md",
+    "-1-临时/日记/2025-03-14.md",
+    "-1-临时/日记/2025-03-21.md",
+    "-1-临时/AI前端/Claude-svg.md",
+    "前端工程化-核心竞争力/vue3-template/10-配置Pinia.md",
+    "前端工程化-核心竞争力/cicd/Nginx从入门到实践.md",
     "前端工程化-核心竞争力/images/Pasted image 20250323165829.png",
-    "前端工程化-核心竞争力/vue3-template/vue3-构建打包优化/images/Pasted image 20250320162651.png",
-    "-1-临时/images/6bb9642f4fdc648f1e44115ac1516a4.png",
-    "前端工程化-核心竞争力/vue3-template/Reference/images/Untitled.png",
-    "前端工程化-核心竞争力/vue3-template/Reference/images/Untitled 3.png",
     "前端工程化-核心竞争力/vue3-template/Reference/images",
     "前端工程化-核心竞争力/vue3-template/Reference",
+    "前端工程化-核心竞争力/vue3-template/vue3-构建打包优化/images",
     "未命名.canvas"
   ]
 }

@@ -17,7 +17,11 @@
 
 ### 3：项目搭建
 #### 设计思路
-一个完整的前端监控平台包括三个部分：数据采集与上报、数据分析和存储、数据展示   数据报警和监控
+一个完整的前端监控平台包括4个部分：
+1. 数据采集与上报
+2. 数据分析和存储
+3. 数据展示
+4. 数据报警和监控
 
 ![](https://cdn.nlark.com/yuque/0/2024/jpeg/207857/1712709657051-2c526183-98c2-4fb9-b75b-2386d38c40bb.jpeg)
 #### 目录结构
@@ -96,6 +100,26 @@ FP、FCP、LCP、CLS、TTFB、FID
 - 异步错误等
 - 静态资源加载错误
 - 接口请求报错
+
+错误分类：
+![](images/Pasted%20image%2020250330120512.png)
+
+除了try catch中捕获住的错误，我们还需要上报没有被捕获住的错误--通过error事件和unhandledrejection事件去监听。
+
+- try..catch不能捕获**异步代码**的错误！所以，可以采用window.onerror方法
+- unhandledrejection一般用来捕获异步方法内部的报错，比如Promise，async await等
+
+![](images/Pasted%20image%2020250330120812.png)
+![](images/Pasted%20image%2020250330120914.png)
+
+✅所以，做好的方式是使用 `window.addEventListener('unhandledrejection')` 然后抛出错误，然后用 `window.addEventListener('error')` 统一捕获！
+
+#### 什么时候上报？
+
+![](images/Pasted%20image%2020250330172557.png)
+
+
+
 ### 6：用户行为收集
 ```javascript
 // 创建用户行为类
