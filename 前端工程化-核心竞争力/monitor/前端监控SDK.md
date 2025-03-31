@@ -284,3 +284,8 @@ fn();
 20. loadEventEnd：load函数执行完毕的时间。
 #### 前端性能核心指标（TTFB、FP、FCP、LCP、TTI、DCL）
  
+
+
+## 参考
+
+- [一文摸清前端监控实践要点](https://juejin.cn/column/7097156230489047047)
