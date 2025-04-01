@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "前端工程化-核心竞争力/vue3-template/5-代码规范.md",
+                "file": "前端工程化-核心竞争力/monitor/前端监控SDK.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "5-代码规范"
+              "title": "前端监控SDK"
             }
           },
           {
@@ -103,8 +103,7 @@
               "title": "书签"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -172,13 +171,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "前端工程化-核心竞争力/vue3-template/5-代码规范.md",
+                "file": "前端工程化-核心竞争力/monitor/前端监控SDK.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "5-代码规范 的大纲"
+              "title": "前端监控SDK 的大纲"
             }
           }
         ],
@@ -217,6 +216,7 @@
   },
   "active": "24ce7ae3fdfe0cf8",
   "lastOpenFiles": [
+    "前端工程化-核心竞争力/vue3-template/5-代码规范.md",
     "技术文章/webpack通关秘籍/webpack原生常用配置.md",
     "技术文章/VSCode Debug技巧.md",
     "前端工程化-核心竞争力/monitor/前端监控SDK.md",
@@ -247,7 +247,6 @@
     "工作/0业务相关/whty/开发项目/重庆通卡/渝通行APP二期需求.md",
     "工作/0业务相关/whty/开发项目/重庆通卡/vpn+服务器.md",
     "工作/0业务相关/whty/国际云v1.6.0迭代复盘.md",
-    "前端工程化-核心竞争力/vue3-template/5-代码规范.md",
     "前端工程化-核心竞争力/vue3-template/Reference/ESLint+Prettier.md",
     "-1-临时/统计前端系统的可用率或者方法？.md",
     "-1-临时/2025-02.md",
