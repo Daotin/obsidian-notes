@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "前端工程化-核心竞争力/monitor/前端监控SDK.md",
+                "file": "-1-临时/AI前端/Cursor科普/MCP/一文搞懂MCP.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "前端监控SDK"
+              "title": "一文搞懂MCP"
             }
           }
         ]
@@ -143,13 +143,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "前端工程化-核心竞争力/monitor/前端监控SDK.md",
+                "file": "-1-临时/AI前端/Cursor科普/MCP/一文搞懂MCP.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "前端监控SDK 的大纲"
+              "title": "一文搞懂MCP 的大纲"
             }
           }
         ],
@@ -189,8 +189,9 @@
   },
   "active": "68cc2ca2156be646",
   "lastOpenFiles": [
-    "-1-临时/AI前端/Claude-svg.md",
+    "-1-临时/AI前端/Cursor科普/MCP/images/e944fa3f6a0f243b3451d46cdc340bcc.jpg",
     "前端工程化-核心竞争力/monitor/前端监控SDK.md",
+    "-1-临时/AI前端/Claude-svg.md",
     "前端工程化-核心竞争力/monitor/images/Pasted image 20250330172557.png",
     "前端工程化-核心竞争力/monitor/images/Pasted image 20250330120914.png",
     "前端工程化-核心竞争力/monitor/images/Pasted image 20250330120812.png",
@@ -232,7 +233,6 @@
     "-1-临时/2025-02.md",
     "技术文章/blog/蓝湖CSS REM如何填写？.md",
     "-1-临时/npm、yarn 和 pnpm 常用指令对比表格.md",
-    "-1-临时/baowen-server.md",
     "前端工程化-核心竞争力/vue3-template/Reference/images",
     "前端工程化-核心竞争力/vue3-template/Reference",
     "未命名.canvas"

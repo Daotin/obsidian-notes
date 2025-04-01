@@ -331,3 +331,6 @@ calc-mcp server is running on http://localhost:3000
 | **AI 和专用工具**    | EverArt             | 使用各种模型进行 AI 图像生成                     |
 |                 | Sequential Thinking | 通过思维序列进行动态问题解决                       |
 |                 | AWS KB Retrieval    | 使用 Bedrock Agent Runtime 从 AWS 知识库检索 |
+
+
+![](images/e944fa3f6a0f243b3451d46cdc340bcc.jpg)
