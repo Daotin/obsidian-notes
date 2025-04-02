@@ -13,16 +13,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "-1-临时/AI前端/Cursor科普/MCP/一文搞懂MCP.md",
+                "file": "前端工程化-核心竞争力/vue3-template/vue3-构建打包优化/vue-cli4和5构建打包优化.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "一文搞懂MCP"
+              "title": "vue-cli4和5构建打包优化"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -144,13 +143,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "-1-临时/AI前端/Cursor科普/MCP/一文搞懂MCP.md",
+                "file": "前端工程化-核心竞争力/vue3-template/vue3-构建打包优化/vue-cli4和5构建打包优化.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "一文搞懂MCP 的大纲"
+              "title": "vue-cli4和5构建打包优化 的大纲"
             }
           }
         ],
@@ -190,6 +189,7 @@
   },
   "active": "68cc2ca2156be646",
   "lastOpenFiles": [
+    "-1-临时/AI前端/Cursor科普/MCP/一文搞懂MCP.md",
     "-1-临时/AI前端/Cursor科普/MCP/images/e944fa3f6a0f243b3451d46cdc340bcc.jpg",
     "前端工程化-核心竞争力/monitor/前端监控SDK.md",
     "-1-临时/AI前端/Claude-svg.md",

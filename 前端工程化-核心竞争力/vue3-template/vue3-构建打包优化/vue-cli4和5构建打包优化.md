@@ -453,7 +453,7 @@ module.exports = {
 
 下面是**不建议**的方式：
 
-```js
+```
 // 1、安装：npm install terser-webpack-plugin@^4 --save-dev
 
 // 2、配置
