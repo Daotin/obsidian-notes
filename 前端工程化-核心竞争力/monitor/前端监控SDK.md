@@ -1,30 +1,38 @@
+## 为什么要做前端监控平台？
 
 
-### 1： 你能得到的收益：
-参与公司前端监控平台/监控SDK的架构设计和开发，为公司的业务赋能
-独立设计和开发监控SDK，对前端页面的性能指标，错误信息 行为信息进行收集，采用合理的方式进行上报
-课程内容：
+
+## 怎么做？
+
+
+### 1、监控平台包括哪些部分？
+
+
 ![image.png](https://cdn.nlark.com/yuque/0/2024/png/207857/1712632783251-9f2ea700-5183-411a-9600-0701b53ab168.png#averageHue=%23f8f4ed&clientId=u4d11667d-9f2f-4&from=paste&height=351&id=u0992f4f8&originHeight=632&originWidth=1428&originalType=binary&ratio=1.7999999523162842&rotation=0&showTitle=false&size=240909&status=done&style=none&taskId=u36cb90e4-d334-490f-9cc0-a23996eec61&title=&width=793.3333543494902)
-涉及到的知识点
+
+涉及到的知识点：
 - Rollup打包的配置（要开发一个SDK，其他项目需要引用）
 - JavaScript基础知识
 - 网络&浏览器相关知识 
 - 框架的错误收集（React Vue）
 
 
-### 2：为什么要自研做监控？作用是什么？为什么不用第三方的监控平台，业界有那些成熟的监控平台
+### 2、方案的选择
+
+使用第三方还是自研？为什么要自研做监控？为什么不用第三方的监控平台，业界有那些成熟的监控平台？
+
 [https://github.com/xy-sea/blog/blob/main/markdown/%E4%BB%8E0%E5%88%B01%E6%90%AD%E5%BB%BA%E5%89%8D%E7%AB%AF%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0%EF%BC%8C%E9%9D%A2%E8%AF%95%E5%BF%85%E5%A4%87%E7%9A%84%E4%BA%AE%E7%82%B9%E9%A1%B9%E7%9B%AE.md](https://github.com/xy-sea/blog/blob/main/markdown/%E4%BB%8E0%E5%88%B01%E6%90%AD%E5%BB%BA%E5%89%8D%E7%AB%AF%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0%EF%BC%8C%E9%9D%A2%E8%AF%95%E5%BF%85%E5%A4%87%E7%9A%84%E4%BA%AE%E7%82%B9%E9%A1%B9%E7%9B%AE.md)
 
-### 3：项目搭建
-#### 设计思路
-一个完整的前端监控平台包括4个部分：
+### 3、设计思路
+
+一个完整的前端监控平台包括4个大部分：
+
 1. 数据采集与上报
-2. 数据分析和存储
+2. 数据存储和分析
 3. 数据展示
 4. 数据报警和监控
 
 ![](https://cdn.nlark.com/yuque/0/2024/jpeg/207857/1712709657051-2c526183-98c2-4fb9-b75b-2386d38c40bb.jpeg)
-#### 目录结构
 
 
 
