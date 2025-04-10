@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "-1-临时/AI前端/Cursor科普/MCP/一文搞懂MCP.md",
+                "file": "前端工程化-核心竞争力/monitor/前端监控SDK.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "一文搞懂MCP"
+              "title": "前端监控SDK"
             }
           }
         ]
@@ -143,13 +143,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "-1-临时/AI前端/Cursor科普/MCP/一文搞懂MCP.md",
+                "file": "前端工程化-核心竞争力/monitor/前端监控SDK.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "一文搞懂MCP 的大纲"
+              "title": "前端监控SDK 的大纲"
             }
           }
         ],
@@ -187,10 +187,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "89d58224b5279b73",
+  "active": "68cc2ca2156be646",
   "lastOpenFiles": [
-    "-1-临时/AI前端/Cursor科普/MCP/Curosr+MCP+Jira.md",
     "-1-临时/AI前端/Cursor科普/MCP/一文搞懂MCP.md",
+    "-1-临时/AI前端/Cursor科普/MCP/Curosr+MCP+Jira.md",
     "-1-临时/AI前端/Cursor科普/MCP/连接后端数据库，做前端 mock.md",
     "-1-临时/AI前端/Cursor科普/MCP/用mcp接入监控平台.md",
     "-1-临时/AI前端/Cursor科普/MCP/用mcp 和cursor实现私有组件库的代码生成.md",
