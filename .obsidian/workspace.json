@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "前端工程化-核心竞争力/monitor/前端监控SDK.md",
+                "file": "-1-临时/AI前端/Cursor科普/MCP/一文搞懂MCP.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "前端监控SDK"
+              "title": "一文搞懂MCP"
             }
           }
         ]
@@ -143,13 +143,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "前端工程化-核心竞争力/monitor/前端监控SDK.md",
+                "file": "-1-临时/AI前端/Cursor科普/MCP/一文搞懂MCP.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "前端监控SDK 的大纲"
+              "title": "一文搞懂MCP 的大纲"
             }
           }
         ],
@@ -189,8 +189,8 @@
   },
   "active": "68cc2ca2156be646",
   "lastOpenFiles": [
-    "前端工程化-核心竞争力/monitor/Sentry入门与实践.md",
     "前端工程化-核心竞争力/monitor/前端监控SDK.md",
+    "前端工程化-核心竞争力/monitor/Sentry入门与实践.md",
     "技术文章/webpack通关秘籍/webpack原生常用配置.md",
     "-1-临时/AI前端/Cursor科普/MCP/一文搞懂MCP.md",
     "-1-临时/AI前端/Cursor科普/MCP/Curosr+MCP+Jira.md",
