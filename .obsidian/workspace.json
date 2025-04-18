@@ -22,26 +22,6 @@
             }
           }
         ]
-      },
-      {
-        "id": "790edda765b30779",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "f4320e4b8fe7a17d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "技术文章/vue2原理剖析/index.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "index"
-            }
-          }
-        ]
       }
     ],
     "direction": "vertical"
@@ -209,41 +189,42 @@
   },
   "active": "737aa8e70716743b",
   "lastOpenFiles": [
-    "技术文章/webpack通关秘籍/index.md",
+    "技术文章/vscode二次开发.md",
     "README.md",
-    "编译原理.md",
-    "技术文章/vue3原理剖析/index.md",
-    "技术文章/vue3原理剖析/要学习的内容.md",
+    "技术文章/VSCode Debug技巧.md",
+    "技术文章/blog/学习RuoYi-Vue前端框架.md",
+    "技术文章/blog/如何绕过“请在微信客户端打开链接”？.md",
+    "技术文章/blog/蓝湖CSS REM如何填写？.md",
+    "技术文章/blog/vue3 KeepAlive原理.md",
+    "技术文章/blog/vue3 hooks思考.md",
+    "技术文章/blog/vue2组件精讲.md",
+    "技术文章/blog/vue2 自动注册全局组件.md",
+    "前端工程化-核心竞争力/monitor/sonarQube简单介绍.md",
+    "技术文章/blog/Git常见问题.md",
+    "技术文章/Electron客户端开发/Electron 的运行原理是什么.md",
+    "技术文章/Electron客户端开发",
+    "技术文章/blog/Echarts配置表.md",
+    "技术文章/blog/CSS token 和 CSS 变量.md",
+    "技术文章/blog/Bit vs npm私有库.md",
+    "技术文章/blog/微信内页跳转 显示“如需浏览，请长按网址复制后使用浏览器访问”怎么解决.md",
+    "技术文章/blog/前端异常监控系统-搭建原理.md",
     "技术文章/vue3原理剖析/学习资料.md",
-    "技术文章/vue2原理剖析/index.md",
-    "技术文章/vue2原理剖析/README.md",
-    "技术文章/性能优化/关于requestAnimationFrame的理解.md",
-    "前端工程化-核心竞争力/vue3-template/1-开发工具推荐.md",
-    "技术文章/浏览器工作原理/0-学什么？.md",
-    "技术文章/浏览器工作原理/index.md",
-    "前端工程化-核心竞争力/vue3-template/0-待办任务.md",
-    "前端工程化-核心竞争力/前端架构师成长路线图.md",
-    "前端工程化-核心竞争力/monitor/前端监控SDK设计思路.md",
+    "技术文章/blog/代码抽审和走查.md",
+    "技术文章/blog/搭建前端组件库.md",
+    "技术文章/blog/安装一个依赖失败如何分析？.md",
+    "技术文章/vue源码学习.md",
+    "技术文章/prompts temp.md",
+    "技术文章/npm.md",
+    "技术文章/webpack通关秘籍/index.md",
     "前端工程化-核心竞争力/monitor/images/Pasted image 20250418104220.png",
     "前端工程化-核心竞争力/monitor/images/Pasted image 20250418104215.png",
     "前端工程化-核心竞争力/monitor/images/Pasted image 20250418104206.png",
     "前端工程化-核心竞争力/monitor/images/Pasted image 20250418104157.png",
     "前端工程化-核心竞争力/monitor/images/Pasted image 20250418104151.png",
-    "前端工程化-核心竞争力/monitor/前端监控web数据大屏.md",
     "前端工程化-核心竞争力/monitor/images/Pasted image 20250418102306.png",
     "前端工程化-核心竞争力/monitor/images/Pasted image 20250418102301.png",
     "前端工程化-核心竞争力/monitor/images/Pasted image 20250418102236.png",
     "前端工程化-核心竞争力/monitor/images/Pasted image 20250418102204.png",
-    "-1-临时/AI前端/Cursor科普/MCP/一文搞懂MCP.md",
-    "前端工程化-核心竞争力/monitor/Sentry入门与实践.md",
-    "技术文章/webpack通关秘籍/webpack原生常用配置.md",
-    "-1-临时/AI前端/Cursor科普/MCP/Curosr+MCP+Jira.md",
-    "-1-临时/AI前端/Cursor科普/MCP/连接后端数据库，做前端 mock.md",
-    "-1-临时/AI前端/Cursor科普/MCP/用mcp接入监控平台.md",
-    "-1-临时/AI前端/Cursor科普/MCP/用mcp 和cursor实现私有组件库的代码生成.md",
-    "-1-临时/AI前端/Cursor科普/一文搞懂cursor.md",
-    "技术文章/性能优化/前端性能优化.md",
-    "-1-临时/AI前端/Cursor科普/Cursor无限续杯.md",
     "-1-临时/AI前端/Cursor科普/MCP/images/e944fa3f6a0f243b3451d46cdc340bcc.jpg",
     "前端工程化-核心竞争力/vue3-template/vue3-构建打包优化/file/全量配置模板/webpack.config3.js",
     "前端工程化-核心竞争力/vue3-template/vue3-构建打包优化/file/全量配置模板/webpack.config2.js",
@@ -254,7 +235,6 @@
     "前端工程化-核心竞争力/vue3-template/vue3-构建打包优化/file",
     "file",
     "前端工程化-核心竞争力/vue3-template/Reference/images",
-    "前端工程化-核心竞争力/vue3-template/Reference",
     "未命名.canvas"
   ]
 }

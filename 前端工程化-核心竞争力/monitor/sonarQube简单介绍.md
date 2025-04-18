@@ -1,5 +1,3 @@
-# sonarQube 简单介绍
-
 ## 什么是 sonarQube
 
 **SonarQube** 是一个开源平台，由 SonarSource 开发，专门用于持续检查代码质量。它通过对代码进行静态分析来自动执行审查，以检测多种编程语言上的错误和代码异味。以下是关于 SonarQube 的一些关键点：
