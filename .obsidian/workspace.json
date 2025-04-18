@@ -4,21 +4,41 @@
     "type": "split",
     "children": [
       {
-        "id": "da7e7d1f50a4389e",
+        "id": "2057f0b79ccf9c28",
         "type": "tabs",
         "children": [
           {
-            "id": "68cc2ca2156be646",
+            "id": "737aa8e70716743b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "前端工程化-核心竞争力/monitor/前端监控SDK设计思路.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "前端监控SDK设计思路"
+              "title": "README"
+            }
+          }
+        ]
+      },
+      {
+        "id": "790edda765b30779",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f4320e4b8fe7a17d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "技术文章/vue2原理剖析/index.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "index"
             }
           }
         ]
@@ -143,13 +163,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "前端工程化-核心竞争力/monitor/前端监控SDK设计思路.md",
+                "file": "README.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "前端监控SDK设计思路 的大纲"
+              "title": "README 的大纲"
             }
           }
         ],
@@ -187,16 +207,29 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "68cc2ca2156be646",
+  "active": "737aa8e70716743b",
   "lastOpenFiles": [
+    "技术文章/webpack通关秘籍/index.md",
+    "README.md",
+    "编译原理.md",
+    "技术文章/vue3原理剖析/index.md",
+    "技术文章/vue3原理剖析/要学习的内容.md",
+    "技术文章/vue3原理剖析/学习资料.md",
+    "技术文章/vue2原理剖析/index.md",
+    "技术文章/vue2原理剖析/README.md",
+    "技术文章/性能优化/关于requestAnimationFrame的理解.md",
+    "前端工程化-核心竞争力/vue3-template/1-开发工具推荐.md",
+    "技术文章/浏览器工作原理/0-学什么？.md",
+    "技术文章/浏览器工作原理/index.md",
+    "前端工程化-核心竞争力/vue3-template/0-待办任务.md",
+    "前端工程化-核心竞争力/前端架构师成长路线图.md",
+    "前端工程化-核心竞争力/monitor/前端监控SDK设计思路.md",
     "前端工程化-核心竞争力/monitor/images/Pasted image 20250418104220.png",
     "前端工程化-核心竞争力/monitor/images/Pasted image 20250418104215.png",
     "前端工程化-核心竞争力/monitor/images/Pasted image 20250418104206.png",
     "前端工程化-核心竞争力/monitor/images/Pasted image 20250418104157.png",
     "前端工程化-核心竞争力/monitor/images/Pasted image 20250418104151.png",
     "前端工程化-核心竞争力/monitor/前端监控web数据大屏.md",
-    "前端工程化-核心竞争力/monitor/前端监控SDK设计思路.md",
-    "前端工程化-核心竞争力/monitor/前端监控SDK设计思路.md",
     "前端工程化-核心竞争力/monitor/images/Pasted image 20250418102306.png",
     "前端工程化-核心竞争力/monitor/images/Pasted image 20250418102301.png",
     "前端工程化-核心竞争力/monitor/images/Pasted image 20250418102236.png",
@@ -211,20 +244,7 @@
     "-1-临时/AI前端/Cursor科普/一文搞懂cursor.md",
     "技术文章/性能优化/前端性能优化.md",
     "-1-临时/AI前端/Cursor科普/Cursor无限续杯.md",
-    "-1-临时/AI前端/Cursor科普/Cursor和MCP应用场景搭建.md",
-    "-1-临时/AI前端/Claude-svg.md",
-    "-1-临时/AI前端/几个cursor维护开发大型项目的小技巧.md",
-    "-1-临时/AI前端/全链路AI驱动的前端开发解决方案.md",
-    "-1-临时/AI前端/自动删除 FG.md",
-    "-1-临时/AI前端/AI+前端.md",
-    "-1-临时/AI前端/AI+CR.md",
-    "-1-临时/AI前端/AI赋能前端研发从0～1.md",
-    "-1-临时/AI前端/AI检测未被使用的依赖？.md",
-    "-1-临时/AI前端/AI生成UI组件库.md",
-    "-1-临时/AI前端/lowcode-vscode.md",
-    "-1-临时/AI前端/v0.dev+cursor工作流.md",
     "-1-临时/AI前端/Cursor科普/MCP/images/e944fa3f6a0f243b3451d46cdc340bcc.jpg",
-    "前端工程化-核心竞争力/monitor/images/Pasted image 20250330172557.png",
     "前端工程化-核心竞争力/vue3-template/vue3-构建打包优化/file/全量配置模板/webpack.config3.js",
     "前端工程化-核心竞争力/vue3-template/vue3-构建打包优化/file/全量配置模板/webpack.config2.js",
     "前端工程化-核心竞争力/vue3-template/vue3-构建打包优化/file/全量配置模板/webpack.config.js",
