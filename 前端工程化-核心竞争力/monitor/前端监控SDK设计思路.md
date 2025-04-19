@@ -1,9 +1,3 @@
-> + [一文摸清前端监控实践要点](https://juejin.cn/column/7097156230489047047)
-> + [从0到1搭建前端监控平台，面试必备的亮点项目](https://github.com/xy-sea/blog/blob/main/markdown/%E4%BB%8E0%E5%88%B01%E6%90%AD%E5%BB%BA%E5%89%8D%E7%AB%AF%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0%EF%BC%8C%E9%9D%A2%E8%AF%95%E5%BF%85%E5%A4%87%E7%9A%84%E4%BA%AE%E7%82%B9%E9%A1%B9%E7%9B%AE.md)
->     - [https://github.com/xy-sea/web-see-demo](https://github.com/xy-sea/web-see-demo)
-> + [https://github.com/miracle90/monitor](https://github.com/miracle90/monitor)
->
-
 ## 为什么要做前端监控平台？
 痛点：
 
@@ -46,8 +40,7 @@
 
 ### 包括哪些部分？
 自研 SDK 包括：
-![](images/Pasted%20image%2020250418104151.png)
-
+![前端监控设计思路](https://github.com/user-attachments/assets/34fd0a36-1ec5-409f-a807-59b1f888773d)
 
 ## 数据采集
 ### 错误数据采集
@@ -541,5 +534,13 @@ if (document.readyState === 'complete') {
 ## sdk打包
 使用rollup打包
 
+
+## 参考文档
+
+> + [一文摸清前端监控实践要点](https://juejin.cn/column/7097156230489047047)
+> + [从0到1搭建前端监控平台，面试必备的亮点项目](https://github.com/xy-sea/blog/blob/main/markdown/%E4%BB%8E0%E5%88%B01%E6%90%AD%E5%BB%BA%E5%89%8D%E7%AB%AF%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0%EF%BC%8C%E9%9D%A2%E8%AF%95%E5%BF%85%E5%A4%87%E7%9A%84%E4%BA%AE%E7%82%B9%E9%A1%B9%E7%9B%AE.md)
+>     - [https://github.com/xy-sea/web-see-demo](https://github.com/xy-sea/web-see-demo)
+> + [https://github.com/miracle90/monitor](https://github.com/miracle90/monitor)
+>
 
 
