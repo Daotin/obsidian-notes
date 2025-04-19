@@ -40,7 +40,8 @@
 
 ### 包括哪些部分？
 自研 SDK 包括：
-![前端监控设计思路](https://github.com/user-attachments/assets/34fd0a36-1ec5-409f-a807-59b1f888773d)
+![前端监控设计思路](https://github.com/user-attachments/assets/a3c3ee59-1cbe-4ea7-a17b-5f943780dc94)
+
 
 ## 数据采集
 ### 错误数据采集
@@ -55,6 +56,7 @@
 
 
 错误分类：
+
 ![](images/Pasted%20image%2020250418104157.png)
 
 
