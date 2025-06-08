@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "2057f0b79ccf9c28",
+        "id": "da7e7d1f50a4389e",
         "type": "tabs",
         "children": [
           {
-            "id": "737aa8e70716743b",
+            "id": "68cc2ca2156be646",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "技术文章/性能优化/BlueLink项目打包体积优化.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "BlueLink项目打包体积优化"
             }
           }
         ]
@@ -143,13 +143,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md",
+                "file": "技术文章/性能优化/BlueLink项目打包体积优化.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "README 的大纲"
+              "title": "BlueLink项目打包体积优化 的大纲"
             }
           }
         ],
@@ -187,35 +187,26 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "737aa8e70716743b",
+  "active": "68cc2ca2156be646",
   "lastOpenFiles": [
-    "技术文章/vscode二次开发.md",
-    "README.md",
-    "技术文章/VSCode Debug技巧.md",
-    "技术文章/blog/学习RuoYi-Vue前端框架.md",
-    "技术文章/blog/如何绕过“请在微信客户端打开链接”？.md",
-    "技术文章/blog/蓝湖CSS REM如何填写？.md",
-    "技术文章/blog/vue3 KeepAlive原理.md",
-    "技术文章/blog/vue3 hooks思考.md",
-    "技术文章/blog/vue2组件精讲.md",
-    "技术文章/blog/vue2 自动注册全局组件.md",
-    "前端工程化-核心竞争力/monitor/sonarQube简单介绍.md",
-    "技术文章/blog/Git常见问题.md",
+    "前端工程化-核心竞争力/cicd/Docker从入门到实践.md",
+    "前端工程化-核心竞争力/cicd/CICD从入门到实践.md",
+    "技术文章/性能优化/BlueLink项目打包体积优化.md",
+    "前端工程化-核心竞争力/vue3-template/vue3-构建打包优化/vue-cli4和5构建打包优化.md",
+    "前端工程化-核心竞争力/vue3-template/vue3-构建打包优化/vite构建打包优化.md",
+    "技术文章/性能优化/前端性能优化.md",
+    "前端工程化-核心竞争力/monitor/前端监控web数据大屏.md",
+    "前端工程化-核心竞争力/monitor/前端监控SDK设计思路.md",
+    "前端工程化-核心竞争力/vue3-template/5-代码规范.md",
+    "前端工程化-核心竞争力/vue3-template/vue3-cli/从零开始构建脚手架.md",
+    "技术文章/浏览器工作原理/4-事件循环.md",
+    "技术文章/浏览器工作原理/3-V8工作原理.md",
+    "技术文章/浏览器工作原理/2-JavaScript执行机制.md",
+    "技术文章/浏览器工作原理/1-浏览器的多进程，页面渲染流程.md",
+    "技术文章/浏览器工作原理/0-学什么？.md",
     "技术文章/Electron客户端开发/Electron 的运行原理是什么.md",
     "技术文章/Electron客户端开发",
-    "技术文章/blog/Echarts配置表.md",
-    "技术文章/blog/CSS token 和 CSS 变量.md",
-    "技术文章/blog/Bit vs npm私有库.md",
-    "技术文章/blog/微信内页跳转 显示“如需浏览，请长按网址复制后使用浏览器访问”怎么解决.md",
-    "技术文章/blog/前端异常监控系统-搭建原理.md",
-    "技术文章/vue3原理剖析/学习资料.md",
-    "技术文章/blog/代码抽审和走查.md",
-    "技术文章/blog/搭建前端组件库.md",
-    "技术文章/blog/安装一个依赖失败如何分析？.md",
-    "技术文章/vue源码学习.md",
-    "技术文章/prompts temp.md",
-    "技术文章/npm.md",
-    "技术文章/webpack通关秘籍/index.md",
+    "前端工程化-核心竞争力/monitor/sonarQube简单介绍.md",
     "前端工程化-核心竞争力/monitor/images/Pasted image 20250418104220.png",
     "前端工程化-核心竞争力/monitor/images/Pasted image 20250418104215.png",
     "前端工程化-核心竞争力/monitor/images/Pasted image 20250418104206.png",
@@ -225,7 +216,12 @@
     "前端工程化-核心竞争力/monitor/images/Pasted image 20250418102301.png",
     "前端工程化-核心竞争力/monitor/images/Pasted image 20250418102236.png",
     "前端工程化-核心竞争力/monitor/images/Pasted image 20250418102204.png",
+    "README.md",
+    "-1-临时/AI前端/Cursor科普/MCP/一文搞懂MCP.md",
     "-1-临时/AI前端/Cursor科普/MCP/images/e944fa3f6a0f243b3451d46cdc340bcc.jpg",
+    "前端工程化-核心竞争力/monitor/前端监控SDK.md",
+    "-1-临时/AI前端/Claude-svg.md",
+    "技术文章/webpack通关秘籍/webpack打包速度和体积优化.md",
     "前端工程化-核心竞争力/vue3-template/vue3-构建打包优化/file/全量配置模板/webpack.config3.js",
     "前端工程化-核心竞争力/vue3-template/vue3-构建打包优化/file/全量配置模板/webpack.config2.js",
     "前端工程化-核心竞争力/vue3-template/vue3-构建打包优化/file/全量配置模板/webpack.config.js",
@@ -233,7 +229,11 @@
     "前端工程化-核心竞争力/vue3-template/vue3-构建打包优化/file/全量配置模板",
     "前端工程化-核心竞争力/vue3-template/vue3-构建打包优化/file/webpack4-prod.js",
     "前端工程化-核心竞争力/vue3-template/vue3-构建打包优化/file",
+    "前端工程化-核心竞争力/vue3-template/vue3-构建打包优化/file/webpack-prod.js.md",
+    "file/webpack-prod.js.md",
     "file",
+    "Obsidian使用技巧.md",
+    "技术文章/性能优化/vue2-webpack性能优化.md",
     "前端工程化-核心竞争力/vue3-template/Reference/images",
     "未命名.canvas"
   ]
