@@ -147,7 +147,7 @@ vue-cli-service build --report
 **如何使用？**
 
 > [!tip] 通过分析，
-> 通过分析，找到速度瓶颈，比如是 ElemetUI 包比较大，然后就可以通过 chatgpt 或者 google 查找关于这个包体积大小优化建议。
+> 通过分析，找到速度瓶颈，比如是 ElementUI 包比较大，然后就可以通过 chatgpt 或者 google 查找关于这个包体积大小优化建议。
 
 
 ## vue-cli4
