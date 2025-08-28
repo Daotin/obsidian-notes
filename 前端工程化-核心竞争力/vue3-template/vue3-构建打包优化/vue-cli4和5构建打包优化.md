@@ -261,7 +261,7 @@ module.exports = {
 
 **1、css tree shaking**
 
-可以使用 purgecss 插件，但区别于 webpack 的配置，可以使用[vue add 的方式](https://purgecss.com/guides/vue.html)进行添加：
+可以使用 purgecss 插件（移除未使用的样式），但区别于 webpack 的配置，可以使用[vue add 的方式](https://purgecss.com/guides/vue.html)进行添加：
 
 安装：
 
@@ -360,10 +360,17 @@ chainWebpack: (config) => {
   },
 ```
 
-> 如果打包报错：Syntax Error: Error: Cannot find module 'imagemin-gifsicle'
-> 则使用 cnpm 安装。
 
-> [!danger] 目前只能压缩 jpg，如果引入了 png 则打包出错，原因未知。。。
+更新 2025-08-26：如果是下面打包报错：
+1、Syntax Error: Error: Cannot find module 'imagemin-gifsicle'
+2、如下图：
+![](images/Pasted%20image%2020250826154015.png)
+
+则，是包安装的问题，npm下载下来的时候因为FQ的问题，包下载的不完全，需要使用cnpm install --save-dev  image-webpack-loader 镜像下载解决的。参考：https://www.cnblogs.com/jateLi/p/13506952.html
+
+```
+cnpm install --save-dev image-webpack-loader@7.0.1
+```
 
 **4、动态 polyfill**
 
@@ -554,7 +561,7 @@ chainWebpack: config => {
           // priority 属性是 cacheGroups 配置项中用来指定缓存组优先级的属性。
 	          // 这个属性的值越大，表示该缓存组的优先级越高，在实际打包过程中，Webpack 会先考虑优先级高的缓存组进行代码分割。
 	          // 举个例子，假设我们有两个缓存组 A 和 B，并且 A 的 priority 值为 10，B 的 priority 值为 20 。那么在打包过程中，Webpack 会首先考虑 B 缓存组进行代码分割，如果 B 缓存组匹配不到任何模块，则会考虑 A 缓存组进行代码分割。
-          priority: 10 // 优先级，执行顺序就是权重从高到低
+          priority: 10, // 优先级，执行顺序就是权重从高到低
           chunks: 'initial' //  **只拆分初始加载的同步 chunk**（如 `import xxx` 直接引入的模块）
         },
         elementUI: { // 把 elementUI 单独分包

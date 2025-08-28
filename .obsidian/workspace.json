@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "2057f0b79ccf9c28",
+        "id": "e837a2fd566da93a",
         "type": "tabs",
         "children": [
           {
-            "id": "737aa8e70716743b",
+            "id": "72d52f2495c2f4ad",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "-1-临时/AI前端/Cursor科普/一文搞懂cursor.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "一文搞懂cursor"
             }
           }
         ]
@@ -54,7 +54,7 @@
               "type": "search",
               "state": {
                 "query": "",
-                "matchingCase": false,
+                "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": true,
                 "extraContext": false,
@@ -87,7 +87,7 @@
       {
         "id": "5a163edeaca27405",
         "type": "tabs",
-        "dimension": 50,
+        "dimension": 59.62499999999999,
         "children": [
           {
             "id": "1f74b0ebdde44398",
@@ -143,13 +143,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md",
+                "file": "-1-临时/AI前端/Cursor科普/一文搞懂cursor.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "README 的大纲"
+              "title": "一文搞懂cursor 的大纲"
             }
           }
         ],
@@ -158,7 +158,7 @@
       {
         "id": "54bafa901a854a15",
         "type": "tabs",
-        "dimension": 50,
+        "dimension": 40.375,
         "children": [
           {
             "id": "cd08d7a7ae8b2667",
@@ -178,6 +178,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:创建新数据库": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
@@ -187,10 +188,24 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "737aa8e70716743b",
+  "active": "72d52f2495c2f4ad",
   "lastOpenFiles": [
-    "技术文章/vscode二次开发.md",
+    "Obsidian使用技巧.md",
+    "未命名.base",
+    "技术文章/性能优化/前端性能优化.md",
+    "Todo.md",
+    "前端工程化-核心竞争力/vue3-template/vue3-构建打包优化/vue-cli4和5构建打包优化.md",
+    "前端工程化-核心竞争力/vue3-template/vue3-构建打包优化/images/Pasted image 20250826154015.png",
+    "前端工程化-核心竞争力/vue3-template/vue3-构建打包优化/vite构建打包优化.md",
+    "技术文章/性能优化/关于requestAnimationFrame的理解.md",
+    "index.md",
     "README.md",
+    "前端工程化-核心竞争力/monitor/前端监控web数据大屏.md",
+    "前端工程化-核心竞争力/monitor/前端监控SDK设计思路.md",
+    "前端工程化-核心竞争力/vue3-template/vue3-cli/从零开始构建脚手架.md",
+    "-1-临时/AI前端/Cursor科普/一文搞懂cursor.md",
+    "工作/前端面试/简历/如何写一份有效的技术简历？.md",
+    "技术文章/vscode二次开发.md",
     "技术文章/VSCode Debug技巧.md",
     "技术文章/blog/学习RuoYi-Vue前端框架.md",
     "技术文章/blog/如何绕过“请在微信客户端打开链接”？.md",
@@ -203,19 +218,6 @@
     "技术文章/blog/Git常见问题.md",
     "技术文章/Electron客户端开发/Electron 的运行原理是什么.md",
     "技术文章/Electron客户端开发",
-    "技术文章/blog/Echarts配置表.md",
-    "技术文章/blog/CSS token 和 CSS 变量.md",
-    "技术文章/blog/Bit vs npm私有库.md",
-    "技术文章/blog/微信内页跳转 显示“如需浏览，请长按网址复制后使用浏览器访问”怎么解决.md",
-    "技术文章/blog/前端异常监控系统-搭建原理.md",
-    "技术文章/vue3原理剖析/学习资料.md",
-    "技术文章/blog/代码抽审和走查.md",
-    "技术文章/blog/搭建前端组件库.md",
-    "技术文章/blog/安装一个依赖失败如何分析？.md",
-    "技术文章/vue源码学习.md",
-    "技术文章/prompts temp.md",
-    "技术文章/npm.md",
-    "技术文章/webpack通关秘籍/index.md",
     "前端工程化-核心竞争力/monitor/images/Pasted image 20250418104220.png",
     "前端工程化-核心竞争力/monitor/images/Pasted image 20250418104215.png",
     "前端工程化-核心竞争力/monitor/images/Pasted image 20250418104206.png",
@@ -225,7 +227,6 @@
     "前端工程化-核心竞争力/monitor/images/Pasted image 20250418102301.png",
     "前端工程化-核心竞争力/monitor/images/Pasted image 20250418102236.png",
     "前端工程化-核心竞争力/monitor/images/Pasted image 20250418102204.png",
-    "-1-临时/AI前端/Cursor科普/MCP/images/e944fa3f6a0f243b3451d46cdc340bcc.jpg",
     "前端工程化-核心竞争力/vue3-template/vue3-构建打包优化/file/全量配置模板/webpack.config3.js",
     "前端工程化-核心竞争力/vue3-template/vue3-构建打包优化/file/全量配置模板/webpack.config2.js",
     "前端工程化-核心竞争力/vue3-template/vue3-构建打包优化/file/全量配置模板/webpack.config.js",
@@ -234,7 +235,6 @@
     "前端工程化-核心竞争力/vue3-template/vue3-构建打包优化/file/webpack4-prod.js",
     "前端工程化-核心竞争力/vue3-template/vue3-构建打包优化/file",
     "file",
-    "前端工程化-核心竞争力/vue3-template/Reference/images",
     "未命名.canvas"
   ]
 }
