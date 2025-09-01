@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "-1-临时/AI前端/Cursor科普/一文搞懂cursor.md",
+                "file": "工作/学习方法/10x程序员工作法.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "一文搞懂cursor"
+              "title": "10x程序员工作法"
             }
           }
         ]
@@ -54,7 +54,7 @@
               "type": "search",
               "state": {
                 "query": "",
-                "matchingCase": true,
+                "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
                 "extraContext": false,
@@ -143,13 +143,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "-1-临时/AI前端/Cursor科普/一文搞懂cursor.md",
+                "file": "工作/学习方法/10x程序员工作法.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "一文搞懂cursor 的大纲"
+              "title": "10x程序员工作法 的大纲"
             }
           }
         ],
@@ -190,33 +190,34 @@
   },
   "active": "72d52f2495c2f4ad",
   "lastOpenFiles": [
+    "工作/学习方法/学习方法-10000 小时定律.md",
+    "README.md",
+    "技术文章/浏览器工作原理/0-学什么？.md",
+    "技术文章/浏览器工作原理/1-浏览器的多进程，页面渲染流程.md",
+    "技术文章/浏览器工作原理/2-JavaScript执行机制.md",
+    "技术文章/浏览器工作原理/3-V8工作原理.md",
+    "技术文章/浏览器工作原理/4-事件循环.md",
+    "技术文章/性能优化/通过Timing瀑布图分析前端性能问题.md",
+    "Todo.md",
+    "技术文章/Electron客户端开发/Electron 的运行原理是什么.md",
+    "前端工程化-核心竞争力/monitor/前端监控SDK设计思路.md",
+    "-1-临时/AI前端/Cursor科普/一文搞懂cursor.md",
     "Obsidian使用技巧.md",
     "未命名.base",
     "技术文章/性能优化/前端性能优化.md",
-    "Todo.md",
     "前端工程化-核心竞争力/vue3-template/vue3-构建打包优化/vue-cli4和5构建打包优化.md",
     "前端工程化-核心竞争力/vue3-template/vue3-构建打包优化/images/Pasted image 20250826154015.png",
     "前端工程化-核心竞争力/vue3-template/vue3-构建打包优化/vite构建打包优化.md",
     "技术文章/性能优化/关于requestAnimationFrame的理解.md",
     "index.md",
-    "README.md",
     "前端工程化-核心竞争力/monitor/前端监控web数据大屏.md",
-    "前端工程化-核心竞争力/monitor/前端监控SDK设计思路.md",
     "前端工程化-核心竞争力/vue3-template/vue3-cli/从零开始构建脚手架.md",
-    "-1-临时/AI前端/Cursor科普/一文搞懂cursor.md",
     "工作/前端面试/简历/如何写一份有效的技术简历？.md",
     "技术文章/vscode二次开发.md",
     "技术文章/VSCode Debug技巧.md",
     "技术文章/blog/学习RuoYi-Vue前端框架.md",
     "技术文章/blog/如何绕过“请在微信客户端打开链接”？.md",
     "技术文章/blog/蓝湖CSS REM如何填写？.md",
-    "技术文章/blog/vue3 KeepAlive原理.md",
-    "技术文章/blog/vue3 hooks思考.md",
-    "技术文章/blog/vue2组件精讲.md",
-    "技术文章/blog/vue2 自动注册全局组件.md",
-    "前端工程化-核心竞争力/monitor/sonarQube简单介绍.md",
-    "技术文章/blog/Git常见问题.md",
-    "技术文章/Electron客户端开发/Electron 的运行原理是什么.md",
     "技术文章/Electron客户端开发",
     "前端工程化-核心竞争力/monitor/images/Pasted image 20250418104220.png",
     "前端工程化-核心竞争力/monitor/images/Pasted image 20250418104215.png",
@@ -234,8 +235,6 @@
     "前端工程化-核心竞争力/vue3-template/vue3-构建打包优化/file/全量配置模板",
     "前端工程化-核心竞争力/vue3-template/vue3-构建打包优化/file/webpack4-prod.js",
     "前端工程化-核心竞争力/vue3-template/vue3-构建打包优化/file",
-    "前端工程化-核心竞争力/vue3-template/vue3-构建打包优化/file/webpack-prod.js.md",
-    "file/webpack-prod.js.md",
     "file",
     "未命名.canvas"
   ]

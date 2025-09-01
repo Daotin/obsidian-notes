@@ -84,10 +84,6 @@
 	- [VNode的Patch过程](技术文章/vue2原理剖析/模版编译渲染原理/VNode的Patch过程.md)
 	- [渲染函数如何转换成VNode节点？](技术文章/vue2原理剖析/模版编译渲染原理/渲染函数如何转换成VNode节点？.md)
 
-## Electron
-
-- [Electron 的运行原理是什么](技术文章/Electron客户端开发/Electron%20的运行原理是什么.md)
-
 
 ## TypeScript
 
